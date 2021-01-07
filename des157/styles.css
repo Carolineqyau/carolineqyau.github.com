@@ -1,4 +1,39 @@
 #banner {
+    width: 800px;
+    height: 250px;
+}
+
+#container {
     width: 1200px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+}
+
+section ul {
+    list-style-type: none
+}
+
+#window {
+    width: 800px;
+    height: 250px;
+    background-color: #000000;
+}
+
+#planet {
+    width: 800px;
+    height: 250px;
+    background-color: dimgray;
+}
+
+#stars {
+    width: 800px;
+    height: 250px;
+    background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 800px) {
     
 }
