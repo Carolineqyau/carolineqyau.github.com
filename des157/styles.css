@@ -51,7 +51,7 @@ header h2 {
 
 #planet img:hover {
     transform: translate(-50px);
-    transform: all 2s ease-out;
+    transition: all 2s ease-out;
 }
 
 #stars {
