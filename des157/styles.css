@@ -1,22 +1,58 @@
-#banner {
-    width: 800px;
-    height: 250px;
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #container {
-    width: 100%;
+    width: 1200px;
+}
+
+header {
+    padding-top: 50px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header h2 {
+    font-size: 2em;
+}
+
+#banner {
+    width: 800px;
+    height: 250px;
     text-align: center;
 }
 
 main {
     display: flex;
+    text-align: center;
+}
+
+body {
+    width: 1200px;
+}
+
+section {
+    padding-right: 30px;
+}
+
+section h2 {
+    padding-left: 40px;
+    text-align: left;
 }
 
 section ul {
-    list-style-type: none
+    list-style-type: none;
+    text-align: left;
 }
 
-#window {
+section ul li a {
+    text-decoration: none;
+}
+
+/* #window {
     width: 800px;
     height: 250px;
     background-color: #000000;
@@ -32,7 +68,7 @@ section ul {
     width: 800px;
     height: 250px;
     background-color: #FFFFFF;
-}
+} */
 
 footer {
     display: flex;
@@ -42,6 +78,20 @@ footer p {
     margin: 20px;
 }
 
-/* @media only screen and (min-width: 800px) {
+footer p a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    /* desktop first approach uses max-width, indicating that the following conditions 
+    are applied if screen is between 0 and 900px (horizontal scroll bar) */
     
-} */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* the above media query is nested within this condition  */
+    /* for screens larger than 1200px */
+    body {
+        text-align: center;
+    }
+}
