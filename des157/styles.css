@@ -1,10 +1,13 @@
 body {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
 #container {
-    width: 1200px;
+
 }
 
 header {
@@ -22,34 +25,8 @@ header h2 {
 #banner {
     width: 800px;
     height: 250px;
-    text-align: center;
-}
-
-main {
-    display: flex;
-    text-align: center;
-}
-
-body {
-    width: 1200px;
-}
-
-section {
-    padding-right: 30px;
-}
-
-section h2 {
-    padding-left: 40px;
-    text-align: left;
-}
-
-section ul {
-    list-style-type: none;
-    text-align: left;
-}
-
-section ul li a {
-    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* #window {
@@ -70,8 +47,30 @@ section ul li a {
     background-color: #FFFFFF;
 } */
 
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+section {
+    padding-right: 50px;
+    text-align: left;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li a {
+    text-decoration: none;
+}
+
 footer {
     display: flex;
+    justify-content: center;
 }
 
 footer p {
@@ -85,13 +84,16 @@ footer p a {
 @media only screen and (max-width: 800px) {
     /* desktop first approach uses max-width, indicating that the following conditions 
     are applied if screen is between 0 and 900px (horizontal scroll bar) */
-    
+    body {
+        overflow-x: scroll;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     /* the above media query is nested within this condition  */
-    /* for screens larger than 1200px */
-    body {
-        text-align: center;
-    }
+    /* centered for screens larger than 1200px */
+    /* body {
+        margin-right: auto;
+        margin-left: auto;
+    } */
 }
