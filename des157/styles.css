@@ -115,6 +115,11 @@ footer p a {
     are applied if screen is between 0 and 900px (horizontal scroll bar) */
     body {
         overflow-x: scroll;
-
+    }
+    main {
+        justify-content: flex-start;
+    }
+    section {
+        padding-left: 50px;
     }
 }
