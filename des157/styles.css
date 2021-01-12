@@ -7,21 +7,17 @@ body {
     background-color: #212226;
 }
 
-#container {
-
-}
-
 header {
     padding-top: 50px;
     color: #D3DAED;
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 header h2 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #banner {
@@ -29,25 +25,53 @@ header h2 {
     height: 250px;
     margin-right: auto;
     margin-left: auto;
+    background-color: #272A33;
 }
 
-/* #window {
-    width: 800px;
-    height: 250px;
-    background-color: #000000;
+#metorite img {
+    position: relative;
+    top: 40px;
+    right: 150px;
+    transform: scale(1.5) translate(-100px);
+    transition: all 2s ease-out;
 }
 
-#planet {
-    width: 800px;
-    height: 250px;
-    background-color: dimgray;
+#metorite img:hover {
+    transform:rotate(2000deg);
+    transition: all 2s ease-out;
+}
+
+#planet img {
+    position: relative;
+    top: 0;
+    right: 50px;
+    transform: scale(2) translate(150px);
+    transition: all 2s ease-out;
+}
+
+#planet img:hover {
+    transform: translate(-50px);
+    transform: all 2s ease-out;
 }
 
 #stars {
-    width: 800px;
-    height: 250px;
-    background-color: #FFFFFF;
-} */
+    position: relative;
+    bottom: 60px;
+    right: 130px;
+    animation-name: shining;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shining {
+  0% {transform: scale( 0.5); }
+  25% {transform: scale( 0.8 );}
+  50% {transform: scale( 1 );}
+  75% {transform: scale( 1.1 );}
+  100% {transform: scale( 1.5 );}
+}
 
 main {
     display: flex;
@@ -93,13 +117,4 @@ footer p a {
         overflow-x: scroll;
 
     }
-}
-
-@media only screen and (min-width: 1200px) {
-    /* the above media query is nested within this condition  */
-    /* centered for screens larger than 1200px */
-    /* body {
-        margin-right: auto;
-        margin-left: auto;
-    } */
 }
