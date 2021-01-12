@@ -4,11 +4,11 @@
 }
 
 #container {
-    width: 1200px;
+    width: 100%;
     text-align: center;
 }
 
-section {
+main {
     display: flex;
 }
 
@@ -34,6 +34,14 @@ section ul {
     background-color: #FFFFFF;
 }
 
-@media only screen and (min-width: 800px) {
-    
+footer {
+    display: flex;
 }
+
+footer p {
+    margin: 20px;
+}
+
+/* @media only screen and (min-width: 800px) {
+    
+} */
