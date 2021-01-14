@@ -9,27 +9,69 @@
     
     <h1>Selection Examples in JS</h1>
     
-    <scrip>
-        <!-- put all javascript here, separate from html and css -->
+    <script>
+        // put all javascript here, separate from html and css
+        // command + / comments a line, option + shift + A comments a block
         var red = true;
         var blue = false;
         var green;
-         <!-- when a variable is undefined (truthy and falsiness) -->
-         <!-- Falsy Value Examples:
-            Undefined, 0, NaN (not a number), "" (empty string), null -->
-        <!-- Truthy Value Examples:
-            Any positive or negative integer (1 or -5), {} objects are always true -->
+        // when a variable is undefined it is false (truthy and falsiness)
+        /* Falsy Value Examples:
+            Undefined, 0, NaN (not a number), "" (empty string), null */
+        /* Truthy Value Examples:
+            Any positive or negative integer (1 or -5), {} objects are always true */
         var myNum = 5;
         var otherNum = 5;
+        var notNum = "5";
+        var animal = "chicken";
+        var myValue = myNum - animal;
+        var colors = ["red", "blue", "green", "yellow"];
+        var colorSelect = colors[3];
+        var goodMood = true;
+        var gotSleep = true;
+        var gotBreakfast = true;
+        var gotLunch = true;
+        var gotDinner = true;
 
-        if (myNum == otherNum){
+        //console.log(myValue);
+
+        /* if (myValue){
             console.log("this is true");
         } else {
             console.log("this is false");
-        }
+        } */
 
+        /* if (colorSelect == "red"){
+            console.log("you have selected red");
+        } else if (colorSelect == "blue"){
+            console.log("you have selected blue");
+        } else if (colorSelect == "green"){
+            console.log("you have selected green");
+        } else {
+            console.log("you have selected yellow");
+        }  */
+        
+        /* if (goodMood && gotSleep){
+            console.log("I'm having a good day");
+        } else {
+            console.log("I'm grumpy");
+        } */
+        
+        /* if (gotBreakfast || gotLunch || gotDinner){
+            console.log("I'm not too hungry");
+        } else {
+            console.log("I'm starving!!!");
+        } */
+        
+        switch(colorSelect){
+            case "red": console.log("you picked red"); break;
+            case "blue": console.log("you picked blue"); break;
+            case "green": console.log("you picked green"); break;
+            case "yellow": console.log("you picked yellow"); break;
+            default: console.log("oops, something went wrong"); break;
         }
-    </scrip>
+        
+    </script>
 
 </body>
 </html>
