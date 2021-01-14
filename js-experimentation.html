@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroline Yau JS Experimentation</title>
+</head>
+<body>
+    
+    <h1>Caroline Yau JS Experimentation</h1>
+
+    <script>
+
+        // 1. Program that takes a lowercase string and capitalizes the first letter of each word in the string
+
+        var string = "this is a lowercase sentence";
+
+        function capitalizeWord(string){
+            // extract words from the sentence by splitting with space
+            string = string.split(" ");
+            // for loop to move along each word in the sentence
+            for (var i = 0; i < string.length; i++){
+                // edit the first letter of each word to be uppercase
+                string[i] = string[i][0].toUpperCase() + string[i].substr(1);
+            }
+            // join the splitted words together by space
+            return string.join(" ");
+        }
+        // print value in console
+        console.log(capitalizeWord(string));
+
+
+        // 2. Program that capitalizes every other letter, or even letters in words in the string
+        function capitalizeOther(string){
+            // split string by space
+            var words = string.split(" ");
+            // loop through each word in sentence
+            for (var i = 0; i < words.length; i ++) {
+                // further split each word into letters
+                var chars = words[i].split("");
+                // iterate through each letter in a word
+                for (var j = 0; j < chars.length; j++){
+                    // the modulo operator condition controls every other letter
+                    if (j%2 == 0){
+                        chars[j] = chars[j].toUpperCase();
+                    }
+                    else {
+                        chars[j] = chars[j].toLowerCase();
+                    }
+                }
+                // join letter together into word
+                words[i] = chars.join("");
+            }
+            // return joint words which becomes a sentence
+            return words.join(" ");
+        }
+
+        console.log(capitalizeOther(string));
+
+    </script>
+
+</body>
+</html>
