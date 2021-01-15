@@ -81,13 +81,16 @@ article img {
     width: 100%;
     height: auto;
     transition: 0.25s all ease-in-out;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 article img:hover {
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.image-container {
+    overflow: hidden;
+}
 article h2, article h2 a {
     font-family: 'Lalezar', cursive;
     text-align: right;
