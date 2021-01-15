@@ -1,0 +1,51 @@
+body {
+    width: 700px;
+    margin: auto;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: #000000;
+    line-height: 1.4em;
+    background-color: #c9e1dc; 
+}
+
+header {
+    text-align: center;
+}
+
+article {
+    width: 740px;
+    padding: 20px;
+    padding-top: 50px;
+    margin: auto;
+    background: linear-gradient(180deg, rgba(231,255,252,1) 0%, rgba(250,255,254,1) 100%);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: Arial;
+    color: #000000;
+}
+
+h2 {
+    font-size: Arial;
+    color: #ff6c00;
+}
+
+section {
+    padding: 20px;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.introduction {
+    padding: 20px;
+    font-size: 1.8em;
+    line-height: 1.5em;
+}
+
+footer p a {
+    text-decoration: none;
+}

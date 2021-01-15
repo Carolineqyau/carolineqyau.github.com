@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="poststyles.css" rel="stylesheet">
+    <title>Post 3</title>
+</head>
+<body>
+    <div id="gradient">
+        <div class="one-sided-shadow"></div>
+    </div>
+    <div id="container">
+    <nav>
+        <ul>
+            <li><a href="index.html" id="up">Home</a></li>
+            <li><a href="post2.html">Previous Post</a></li>
+            <li><a href="post4.html" id="down">Next Post</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <header>
+            <h1>Post 3</h1>
+        </header>
+
+        <h2>Blog Design Research</h2>
+        <time datetime="2020-05-13">May 13th, 2020</time>
+        <p>I learned that the performance of html can be improved by preloading the link element’s rel attribute. It allows preloading resources that our pages will need soon after loading early in the lifecycle of a page load, before the browser’s main rendering machinery. </p>
+        <p>Another cool thing is that audio and video elements allow us to play audio and video media natively without external software support. I wonder if this is how our lecture videos are embedded in our assignment guidelines?</p>
+        <p>Lastly, a hint given when adapting to mobile design is to never set text using viewport units alone, since it will not allow users to zoom in on text. A solution to this is using calc() and combining vw units to fixed size units such as em or rem which will allow the text to be zoomable. For example: h1 { font-size: calc(1.5rem + 3vw); }</p>
+    </article>
+    
+    <footer>
+        <p id="name">Caroline Yau</p>
+        <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
+    </footer>
+    </div>
+</body>
+</html>

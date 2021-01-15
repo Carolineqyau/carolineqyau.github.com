@@ -8,11 +8,11 @@
 <body>
     
     <h1>Caroline Yau JS Experimentation</h1>
+    <!-- To get more practice, I decided to program all of the prompts. -->
 
     <script>
 
         // 1. Program that takes a lowercase string and capitalizes the first letter of each word in the string
-
         var string = "this is a lowercase sentence";
 
         function capitalizeWord(string){
@@ -35,7 +35,7 @@
             // split string by space
             var words = string.split(" ");
             // loop through each word in sentence
-            for (var i = 0; i < words.length; i ++) {
+            for (var i = 0; i < words.length; i++) {
                 // further split each word into letters
                 var chars = words[i].split("");
                 // iterate through each letter in a word
@@ -56,6 +56,41 @@
         }
 
         console.log(capitalizeOther(string));
+
+
+        /* // 3. Program that reverses the letters in each word in a string of words, but keeps the words in the same order.
+        function reversal(string){
+            var words = string.split("");
+            for (var i = 0; i < words.length; i++){
+                words[i] = words[i].reverse().join("");
+                //var chars = words[i].split("");
+                //chars[i].reverse();
+            }
+            //words[i] = chars.join("");
+            words = words.split(" ").reverse();
+            return words.join(" ");
+        }
+
+        console.log(reversal(string)); */
+
+        /* // 4. Program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead
+        var number = 100;
+        var value = "";
+        for (var i = 0; i < number; i++){
+            if (number % 3 == 0){
+                value = "Fizz";
+                //console.log("Fizz");
+            } else if (number % 5 == 0){
+                value = "Buzz";
+                //console.log("Buzz");
+            } else {
+                value = i;
+                //console.log(i);
+            }
+            console.log(value);
+        } */
+        
+        
 
     </script>
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="poststyles.css" rel="stylesheet">
+    <title>Post 5</title>
+</head>
+<body>
+    <div id="gradient">
+        <div class="one-sided-shadow"></div>
+    </div>
+    <div id="container">
+    <nav>
+        <ul>
+            <li><a href="index.html" id="up">Home</a></li>
+            <li><a href="post4.html" id="down">Previous Post</a></li>
+
+        </ul>
+    </nav>
+
+    <article>
+        <header>
+            <h1>Post 5</h1>
+        </header>
+
+        <h2>Web Design Research</h2>
+        <time datetime="2020-05-26">May 26th, 2020</time>
+        <p><a href="https://alistapart.com/article/using-responsive-images-now/">This article</a> discusses using responsive images. There has always been this trade-off between using blurry pixelated image on a large display and loadings a huge image on a mobile phone.
+        The picture element and the secret and sizes attribute are drafted into the HTML 5.1 specification which will address the issues:</p>
+        <ul>
+            <li>Device-pixel-ratio-based selection</li>
+            <li>Viewport-based selection</li>
+            <li>Art direction-based selection</li>
+            <li>Image format-based selection</li>
+        </ul>
+        <p>The new attribute srcset let us declare a set of image sources, which browsers will serve according to certain conditions we specify using descriptors. x descriptors incidate the pixel-density of the images, while w descriptors indicate the width of the images. The sizes attribute must be included when using srcset with w descriptors.</p>
+        <p>The picture element wraps the image and its sources. Source provides the browser different versions to choose from when displaying the image according to the device used.</p>
+        <p>Currently, picture is supported by Firefox, Chrome and Opera whereas Safari and Internet Explorer do not support it natively.</p>
+    </article>
+    
+    <footer>
+        <p id="name">Caroline Yau</p>
+        <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Helvetica;
+    color: #000000;
+}
+
+#gradient {
+    width: auto;
+    height: 150px;
+    background: rgb(59,86,166);
+    background: linear-gradient(90deg, rgba(59,86,166,1) 0%, rgba(147,73,143,1) 39%, rgba(98,148,209,1) 61%, rgba(168,226,241,1) 100%);
+}
+
+.one-sided-shadow {
+    width: auto;
+    height: 150px;
+    box-shadow: inset 5px 0 40px -15px #000000;
+}
+
+nav ul {
+    margin: 0;
+    float: right;
+    padding-right: 5%;
+    margin-top: -110px;
+    width: 110px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    background: #000;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+
+}
+
+#up {
+    font-weight: normal;
+    padding-top: 40px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+#down {
+    padding-bottom: 40px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+nav ul li a:hover {
+    font-weight: normal;
+}
+
+h1 {
+    margin: 0;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+}
+
+section {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+article {
+    padding-bottom: 15px;
+}
+
+article h2, time {
+    font-style: italic;
+}
+
+section article p a {
+    text-decoration: none;
+}
+
+article:last-of-type {
+    padding-bottom: 60px;
+}
+
+footer {
+    background: #000000;
+    text-align: center;
+    height: 110px;
+    margin: 0;
+    padding: 0;
+}
+#name {
+    font-size: medium;
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 20px;
+}
+footer p a {
+    font-size: small;
+    font-family: Helvetica;
+    color: #81a2ff;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+@media only screen and (min-width: 600px) {
+    #container {
+        width: 100%;
+        margin: auto;
+    }
+
+    nav ul{
+        margin-top: 0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        width: 100%;
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+
+    h1 {
+        padding: 0;
+        padding-top: 90px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    article {
+        padding-bottom: 20px;
+    }
+
+    #up {
+        border-radius: 0;
+        padding: 6px 10px;
+    }
+
+    #down {
+        border-radius: 0;
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 1020px) {
+
+    nav {
+        background: black;
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+    nav ul {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    h1 {
+        padding-top: 52px;
+    }
+
+    section {
+        max-width: 800px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devicewidth, initial scale=1.0">
+	<title>Positioning Challenge 3</title>
+	<style>
+
+		body {
+			padding-top: 100px;
+			font-family: Arial;
+		}
+
+		header {
+			width: 1000px;
+			margin: auto;
+			background-color: chocolate;
+			height: 150px;
+			padding: 50px;
+			position: relative;
+		}
+
+		header h1 {
+			text-align: center;
+		}
+
+		nav {
+			position: absolute;
+			top: -50px;
+			right: 0;
+		}
+
+		nav ul {
+			overflow: hidden;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul li {
+			float: left;
+		}
+
+		nav ul li a {
+			display: block;
+			text-decoration: none;
+			color: white;
+			background-color: deepskyblue;
+			width: 100px;
+			height: 50px;
+			text-align: center;
+			border-left: 2px solid #333;
+			line-height: 50px;
+		}
+
+		nav ul li:first-of-type a {
+			border-left: none;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<header>
+		<h1>Main Heading for the Page</h1>
+
+		<nav>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	
+</body>
+</html>

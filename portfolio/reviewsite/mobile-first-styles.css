@@ -1,0 +1,236 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color:#333;
+}
+
+.container {
+	padding: 0 15px;
+}
+
+header {
+	padding: 20px 0;
+	background: #E8E8E8;
+}
+
+#middle {
+	background-color: turquoise;
+}
+
+footer {
+	background-color: palevioletred;
+	text-align: center;
+	padding: 100px 0;
+	color:#fff;
+	font-size: 22px;
+}
+
+/****** Typography ******/
+
+h1, h2, h3 {
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	color:#061688;
+}
+
+h1 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin: 20px auto;
+	font-size: 28px;
+	padding: 0 10px;
+}
+
+h3 {
+	font-size: 22px;
+	margin-bottom: .5em;
+}
+
+p {
+	line-height: 1.4em;
+	margin: 0 0 1em 0;
+}
+
+a {
+	font-weight: 600;
+	color: #B606DB;
+	text-decoration: none;
+}
+
+.date {
+	font-size: 12px;
+	color:#000;
+	font-weight: 600;
+	margin-bottom: .5em;
+}
+
+
+picture {
+	display: block;
+	float: left;
+	width: 20%;
+	margin-right: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/********** Middle Styles **********/
+
+figure {
+	text-align: center;
+	width: 95%;
+	margin: auto;
+	font-size: 24px;
+	padding: 20px 0;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-weight: 600;
+}
+
+blockquote {
+	margin-bottom: 20px;
+	
+}
+
+blockquote::before {
+	content: "\201c";
+}
+
+blockquote::after {
+	content: "\201d";
+}
+
+figcaption::before {
+	content: "\2014";
+}
+
+/*********** Navigation Styles **********/
+
+nav {
+	background: #676767;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+nav ul li a {
+	display: block;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-weight: 100;
+	color:#EBEBEB;
+	font-size: 24px;
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #929292;
+}
+
+nav ul li a:hover {
+	background: #C4C4C4;
+	color:#333;
+}
+
+@media only screen and (min-width: 600px) {
+	
+	#top .container, #bottom .container {
+		display: flex;
+	}
+	
+	#top .post {
+		flex: 1;
+	}
+	
+	#top .post:first-of-type{
+		margin-right: 20px;
+	}
+	
+	#bottom .container {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	#bottom article {
+		width: 48%;
+	}
+	
+	#bottom article:first-of-type {
+		flex: 100%;
+	}
+
+}
+
+@media only screen and (min-width: 700px) {
+	
+	nav ul {
+		display: flex;
+	}
+	
+	nav ul li {
+		flex:1;
+	}
+	
+	nav ul li a {
+		border-bottom: none;
+		border-right: 1px solid #929292;
+	}
+	
+	nav ul li:last-of-type a {
+		border-right: none;
+	}
+	
+}
+
+@media only screen and (min-width: 1000px) {
+	
+	.container, h2 {
+		width: 1000px;
+		margin: auto;
+	}
+	
+	.post > div {
+		display: flex;
+	}
+	
+	.post picture {
+		flex: 1;
+		margin-right: 10px;
+	}
+	
+	.post .entry {
+		flex: 3;
+	}
+
+	#bottom .container {
+		flex-wrap: nowrap;
+	}
+	
+	#bottom .container article {
+		flex: 1;
+		margin-right: 20px;
+	}
+	
+	#bottom .container article:last-of-type {
+		margin-right: 0;
+	}
+
+	figure {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	
+	nav {
+		margin-bottom: 20px;
+	}
+	
+}
+

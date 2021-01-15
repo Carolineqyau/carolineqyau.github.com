@@ -1,0 +1,87 @@
+body {
+    background: url(images/fur.jpg);
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: 400;
+    padding-top: 100px;
+    color: white;
+    line-height: 1.4em;
+}
+
+main {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2.5emx;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    padding: 5px;
+}
+
+
+section {
+    padding: 20px;
+}
+
+.introduction {
+    padding: 20px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+body main section ul li a, body main section ol li a{
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color: #3c3c3c;
+    border: 2px solid #333;
+    padding: 20px;
+    display: block;
+    margin-bottom: 20px;
+    background-color: #e0eeeb;
+    border-radius: 5px;
+}
+
+body footer p a {
+    text-decoration: none;
+}
+
+footer {
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media (min-width: 600px){
+    main {
+        width: 550px;
+    }
+    section h2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+}
