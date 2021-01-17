@@ -80,6 +80,7 @@ article {
 article img {
     width: 100%;
     height: auto;
+    filter: blur(50px);
     transition: 0.25s all ease-in-out;
     /* overflow: hidden; */
 }
