@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Experimentation</title>
+</head>
+<body>
+
+    <h1>JavaScript Experimentation with Functions and DOM</h1>
+
+    <script>
+        //array
+        var level = ["freshman", "sophomore", "junior", "senior"];
+        //prompt
+        var input = prompt("Nice to meet you! What's your major?", "")
+        //this changes the all letters to lower case.
+        input = input.toLowerCase(); 
+        //then changes the first letter to upper case.
+        input = input.charAt(0).toUpperCase()+input.substr(1);
+        //console.log(input)
+
+        function askInput(major){
+             if (major !== null && major != ""){
+                return major;
+                //console.log(major);
+            }
+            else {
+                alert("Aw, you didn't tell me your major :(")
+            }
+        }
+        //askInput(input);
+
+        function print(major, year){
+            major = askInput(major);
+            var year = prompt("Cool! What year are you in?", "");
+            if (year !== null && year != "" && year > 0 && year < 5){
+                //alert("Thanks for sharing! Have a great rest of the quarter :)")
+                var standing = level[year-1];
+                alert(`According to my calculation, you are a ${standing} majoring in ${major}!`)
+            }
+            else {
+                alert("Aw, that didn't work :(")
+            }
+        }
+        print(input, level);
+            
+        
+        
+
+    </script>
+    
+</body>
+</html>
