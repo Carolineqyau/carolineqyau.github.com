@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Examples</title>
+    <style>
+        .blue {color: blue;}
+        .large {font-size: 24px;}
+    </style>
+</head>
+<body>
+
+    <h1>DOM Examples in JavaScript</h1>
+
+    <p id="one" class="large">Here is a paragraph on the page.</p> 
+    <!-- only use id once on a page, has to be unique -->
+    <p>Here is another paragraph.</p>
+    <p>Here is the third paragraph.</p>
+    <p class="cheese">Chesse is yummy.</p>
+
+    <form>
+        <label><input type="checkbox"> Yes</label>
+        <!-- in HTML5: type = "checkbox" checked shortcut -->
+    </form>
+
+    <article id="special">
+        <p>Paragraph one</p>
+        <p>Paragraph two</p>
+    </article>
+
+    <div>
+        <p>Here is the first paragraph in this div.</p>
+    </div>
+
+    <script>
+        //document.getElementById("one").style.color = "red"; //hex, rgb, rgba
+        //var text = document.getElementsByTagName('p');
+        //html written in double quotation, use single quote in JS.
+        //console.log(text);
+        //gets an HTMLCollection(3)
+
+        //need to use loop because cant apply to array, apply to each element of array
+        /* for (var i=0; i < text.length; i++){
+            text[i].style.color = "red";
+            alert(`this is paragraph number ${i}`);
+        } */
+
+        /* var myClass = document.getElementsByClassName('blue');
+        for (var i = 0; i < myClass.length; i++){
+            myClass[i].style.color = "blue";
+        } */
+
+        //document.querySelector('p').style.fontSize = "24px"; //first element found
+        //CSS properties that have dashes turn into camelCase in JS, because JS thinks youre subtracting sth with minus
+
+        /* var specialPs = document.querySelectorAll("#special p");
+        for (var i=0; i<specialPs.length; i++){
+            specialPs[i].style.fontWeight = "bold";
+        } */
+
+        // var myArticle = document.querySelector('#special');
+        // myArticle.innerHTML = '<p>I like cheese!<p>';
+
+        //document.querySelector('p').className = 'blue large'; //both classes
+        //className is destructive, replaces previous
+
+        /* var checkbox = document.querySelector('input');
+        checkbox.setAttribute('checked', 'checked'); */ //filename: string, value: string
+        //attribute i'm gonna set (checked), what i'm gonna set it to
+
+        /* var myPara = document.createElement('p');
+        var myText = document.createTextNode('here is the second paragraph added to div.');
+        myPara.appendChild(myText); //p element
+        document.querySelector('div').appendChild(myPara) */
+
+        var myArticle = document.querySelector('article');
+        myArticle.removeChild(myArticle.children[1]); //remove second children
+        
+        //document.querySelector('article').removeChild(myArticle.children[1]);
+        //How to do it in one line? The inside of removeChild() needs to be changed.
+        
+
+
+
+        
+
+    </script>
+
+</body>
+</html>
