@@ -16,7 +16,7 @@
             console.log(upperString);
         }
 
-        doStuff(); //declare function to make function run.
+        //doStuff(); //declare function to make function run.
 
         function checkNum(){
             var number = prompt("Please enter a whole number", "")
@@ -61,21 +61,57 @@
 
         var food = ["cheese", "bread", "chicken", "fruit", "candy"];
 
-        function randomInt(min, max){
-            var numOfValues = max - min + 1;
-            var randomNum = Math.random();
-            var randomVal = randomNum * numOfValues
-            var roundedRandomVal = Math.floor(randomVal); //.floor() = round down, .ceil() = round up
-            var finalNum = min + roundedRandomVal;
+        function randomInt(min, max){ //declaring functions
+            // var numOfValues = max - min + 1;
+            // var randomNum = Math.random();
+            // var randomVal = randomNum * numOfValues
+            // var roundedRandomVal = Math.floor(randomVal); //.floor() = round down, .ceil() = round up
+            // var finalNum = min + roundedRandomVal;
             //console.log(finalNum); //between 0 up to 6
-            return finalNum;
+            //return finalNum;
+            return Math.floor((max - min + 1) * Math.random()) + min;
         }
 
         //randomInt(5, 10); //numOfValues = 6
         console.log(food[randomInt(0, 4)]);
 
+        //In javascript, functions are first class objects/members, functions can be assigned to a variable just like any other data
+        //functions can be passed in as parameters
 
+        //function expression below (as opposed to function declarations). Has become very popular
+        var greeting = function(){ //anonymous function = without a name
+            var yourName = prompt("Hello, what is your name?", "")
+            console.log(`Your told me your name is ${yourName}`);
+        } 
+
+        greeting(); //variable has to be called like a function
+
+        //Alternate syntax of functions
+        //Arrow Functions
+
+        var greeting = "Hello, and good morning!";
+
+        function capitalizeFunction(anyString){
+            anyString = anyString.toUpperCase();
+            return anyString;
+        }
         
+        var capitalizeExpression = function(anyString){
+            anyString = anyString.toUpperCase();
+            return anyString; //does the same thing
+        }
+
+        var capitalizeArrow = anyString => anyString.toUpperCase(); //only doing a return statement
+        //new syntax for defing functions by ES6 or ES2015
+
+       //method is a function that belongs to an object. 
+       window.doStuff();
+       //doStuff belongs to the window object. Everything in JavaScript is an object.
+       //if it doens't belong to one object, it belongs to another.
+       //if it doesn't belong to one object SPECIFICALLY, it belongs to the window.
+       //therefore, every function is essentially an method.
+
+       //Math is an object in javascript. Console is an object .log is a method that allow you to print things into Console.
 
     </script>
 
