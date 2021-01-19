@@ -11,6 +11,24 @@
     
     <script>
 
+        var foods = ["chocolate", "rice", "grape", "cookie", "chips"];
+        var username = prompt("What's your name?", "");
+        function hello(name){
+            if (name != null && name != ""){
+                return `Hello ${name}, and welcome!`;
+            } else {
+                return "You didn't give me your name :(";
+            }
+        }
+
+        function hospitality(name, gift){
+            console.log(hello(name));
+            for (var i of gift){
+                console.log(`${name}, would you like some ${gift}?`);
+            }
+        }
+        hospitality(username, foods);
+
     </script>
     
 </body>

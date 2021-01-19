@@ -11,6 +11,16 @@
     
     <script>
 
+        var name = prompt("What's your name?", "");
+        function hello(name){
+            if (name != null && name != ""){
+                return `Hello ${name}, and welcome!`;
+            } else {
+                return "You didn't give me your name :(";
+            }
+        }
+        console.log(hello(name));
+
     </script>
     
 </body>

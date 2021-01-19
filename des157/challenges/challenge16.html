@@ -11,6 +11,25 @@
     
     <script>
 
+        var foods = ["chocolate", "rice", "grape", "cookie", "chips"];
+        var username = prompt("What's your name?", "");
+        function randomInt(min, max){
+            return Math.floor((max - min + 1) * Math.random()) + min;
+        }
+        function hello(name){
+            if (name != null && name != ""){
+                return `Hello ${name}, and welcome!`;
+            } else {
+                return "You didn't give me your name :(";
+            }
+        }
+        function hospitality(name, gift){
+            console.log(hello(name));
+            var randomGift = gift[randomInt(0, gift.length-1)];
+            console.log(`${name}, would you like some ${randomGift}?`);
+        }
+        hospitality(username, foods);
+
     </script>
     
 </body>

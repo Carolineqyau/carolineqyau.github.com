@@ -11,6 +11,20 @@
     
     <script>
 
+        // in challenge 12, if you clicked cancel to the prompt, the console displays:
+        //"challenge12.html:16 Hello null, and welcome!"
+
+        var name = prompt("What's your name?", "");
+        function hello(name){
+            if (name != null && name != ""){
+                console.log(`Hello ${name}, and welcome!`);
+            } else {
+                console.log("You didn't give me your name :(")
+            }
+        }
+        hello(name);
+        //problem: this still returned Hello null in the console, why is that?
+
     </script>
     
 </body>
