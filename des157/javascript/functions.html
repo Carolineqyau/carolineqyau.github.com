@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript</title>
+</head>
+<body>
+    
+    <script>
+
+        function doStuff(){
+            var myString = "here is a message";
+            var upperString = myString.toUpperCase(); //toUpperCase() is a string method.
+            console.log(myString);
+            console.log(upperString);
+        }
+
+        doStuff(); //declare function to make function run.
+
+        function checkNum(){
+            var number = prompt("Please enter a whole number", "")
+            if (number < 10){
+                console.log("You entered a number smaller than 10");
+                for (i=0; i<10; i++){
+                    console.log(`Here is a ${i}`);
+                }
+            } else if (number > 9) {
+                console.log("You entered a big number");
+            } else {
+                console.log("ERROR: You did not enter a number!");
+            }
+        }
+
+        //checkNum();
+
+        function upperMessage(message){
+            var upper = message.toUpperCase();
+            console.log(upperCaseMessage);
+        }
+
+        //upperMessage("any data that i want"); //pass something into the function as parameters
+
+        function addNums(num1, num2){
+            var sum = num1 + num2;
+            console.log(sum);
+        }
+
+        //addNums(3, 5);
+
+        function returnSum(num1, num2){
+            var sum = num1 + num2;
+            return sum; //return data
+        }
+
+        //console.log(returnSum(3, 6));
+
+        //Math.random() in JavaScript generates a random number from 0 to less than 1)
+        //close to a real random number, uses an algorithm derived from computer clock millisecond
+        //console.log(Math.random());
+
+        var food = ["cheese", "bread", "chicken", "fruit", "candy"];
+
+        function randomInt(min, max){
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues
+            var roundedRandomVal = Math.floor(randomVal); //.floor() = round down, .ceil() = round up
+            var finalNum = min + roundedRandomVal;
+            //console.log(finalNum); //between 0 up to 6
+            return finalNum;
+        }
+
+        //randomInt(5, 10); //numOfValues = 6
+        console.log(food[randomInt(0, 4)]);
+
+
+        
+
+    </script>
+
+</body>
+</html>
