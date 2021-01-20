@@ -18,18 +18,15 @@
         input = input.toLowerCase(); 
         //then changes the first letter to upper case.
         input = input.charAt(0).toUpperCase()+input.substr(1);
-        //console.log(input)
 
         function askInput(major){
              if (major !== null && major != ""){
                 return major;
-                //console.log(major);
             }
             else {
                 alert("Aw, you didn't tell me your major :(")
             }
         }
-        //askInput(input);
 
         function print(major, year){
             major = askInput(major);
@@ -43,10 +40,8 @@
                 alert("Aw, that didn't work :(")
             }
         }
+
         print(input, level);
-            
-        
-        
 
     </script>
     
