@@ -46,6 +46,36 @@
     
     <script>
         document.getElementById("copyright").style.color = "green";
+
+        var allPs = document.getElementsByTagName('p');
+        for (var eachP of allPs) {
+            eachP.style.color = "green";
+		}
+		
+		var mainHeading = document.querySelector('h1');
+		mainHeading.className = "red";
+
+		var datePs = document.getElementsByClassName('date');
+		datePs[1].className = "red";
+
+		var img = document.querySelector('#one img');
+		img.setAttribute('src', 'http://meadpoint.net/images/xmasajax.jpg');
+
+		var secondArticlePs = document.querySelectorAll('#two p');
+
+		for (var i=0; i<secondArticlePs.length; i++){
+			secondArticlePs[i].className = "blue";
+		}
+		
+		var anchors = document.getElementsByTagName('a');
+
+		for (var i=0; i<anchors.length; i++){
+			var link = anchors[i].getAttribute('href');
+
+			if (link === "https://en.wikipedia.org/wiki/Llama"){
+				anchors[i].innerHTML = "Llamas are cool!" ;
+			}
+		}
     </script>
 
 </body>

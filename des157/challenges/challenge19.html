@@ -46,6 +46,18 @@
     
     <script>
         document.getElementById("copyright").style.color = "green";
+
+        var allPs = document.getElementsByTagName('p');
+        for (var eachP of allPs) {
+            eachP.style.color = "green";
+		}
+		
+		var mainHeading = document.querySelector('h1');
+		mainHeading.className = "red";
+
+		var datePs = document.getElementsByClassName('date');
+		datePs[1].className = "red";
+
     </script>
 
 </body>
