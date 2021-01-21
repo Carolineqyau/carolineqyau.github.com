@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #202023;
+
+    margin: 0;
+    background: linear-gradient(222deg, #49d7b3, #0a3ee1, #ffa154, #ff3f82, #ffe23f, #98e44f);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationName 60s ease infinite;
+    -moz-animation: AnimationName 60s ease infinite;
+    animation: AnimationName 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+
+.blur {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(50px);
+}
+
+header h1 {
+    color: white;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+header h2 {
+    color: whitesmoke;
+    padding-left: 50px;
+}
+
+main h2 {
+    color: #4F4746;
+    /* color: #2662EA; */
+}
+
+main h2 a {
+    text-decoration: none;
+}
+
+main h2 a:hover {
+    color: #2662EA;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding: 40px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+article {
+    margin-bottom: 80px;
+}
+article p a {
+    text-decoration: none;
+    color: #EA4F26;
+}
+
+article img {
+    margin-top: 20px;
+    width: 800px;
+    border-radius: 20px;
+}
+
+article p a:hover {
+    color: #6666FF;
+}
+
+article time {
+    font-style: italic;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        padding: 20px;
+    }
+
+    article img {
+        width: 80vw;
+    }
