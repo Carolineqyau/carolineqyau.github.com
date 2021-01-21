@@ -85,7 +85,7 @@ nav ul li a {
     padding-right: 25px;
     padding-bottom: 5px;
     text-decoration: none;
-    color: black;
+    color: #202023;
     /* display: inline-block;
     position: relative; */
     display: inline-block;
@@ -230,6 +230,11 @@ section:hover {
     transform: scale(1.05);
 } */
 
+.text-container {
+    padding: 20px;
+}
+
+
 footer {
     justify-content: center;
     color: #E2E2E8;
@@ -353,6 +358,10 @@ footer ul li a:hover {
 
     nav ul li a:hover:after {
         width: 65%;
+    }
+
+    #welcome {
+        font-size: 24px;
     }
 
 
