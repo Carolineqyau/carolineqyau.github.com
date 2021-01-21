@@ -61,6 +61,7 @@ main {
     background-color: rgba(255, 255, 255, 0.8);
     margin-left: 2vw;
     margin-right: 2vw;
+    height: auto;
     padding: 40px;
     justify-content: center;
     border-radius: 20px;
@@ -87,6 +88,27 @@ article p a:hover {
 article time {
     font-style: italic;
 }
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    color: #202023;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 20px;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #6666FF;
+}
+
 
 @media only screen and (max-width: 900px) {
     main {
