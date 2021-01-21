@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label, input {
+            display: block;
+        }
+        input {
+            margin-bottom: 1em;
+            /* 1em is 16 pixels by default */
+        }
+        fieldset input, fieldset label {
+            display: inline;
+        }
+        fieldset label {
+            margin-bottom: 1.2em;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h1>Example Form</h1>
+
+    <form action="processor.php" method="POST"> 
+        <!-- post sends to php in a hidden way. Get will show the results to user like product search -->
+        <label for fname>First Name</label>
+        <!-- for attribute connects this label to this id. same value. Cursor click label will move into box -->
+        <input type="text" name="fname" id="fname" placeholder="Bob" required>
+        <!-- php will know what field this is by the name attribute -->
+        <!-- value="some value" value is the default value displayed -->
+        <!-- placeholder for example of what type of data is in -->
+
+        <label>First name
+            <input type="text" name="fname" id="fname" placeholder="Bob">
+        </label>
+        <!-- also ok -->
+
+        <label for="favcolor">Favorite Color</label>
+        <input type="color" id="favcolor" name="favcolor">
+
+        
+
+        <fieldset>
+            <legend>Do you want spam?</legend>
+            
+            <input type="radio" name="spam" id="spam-yes" value="yes">
+            <label for="spam-yes">yes, send me spam</label>
+
+            <input type="radio" name="spam" id="spam-no" value="no" checked>
+            <!-- checked makes this the default field. is short for checked="checked" -->
+            <label for="spam-no">no, send me spam</label>
+            <!-- same name attribute makes them a single choice -->
+        </fieldset>
+
+        <fieldset>
+            <legend>What animals do you like?</legend>
+            <input type="checkbox" name="animal[]" id="cat" value="cat">
+            <!-- square brackets mean to treat it as an array -->
+            <label for="cat">Cat</label>
+
+            <input type="checkbox" name="animal[]" id="dog" value="dog">
+            <label for="dog">Dog</label>
+
+            <input type="checkbox" name="animal[]" id="llama" value="llama">
+            <label for="llama">Llama</label>
+        </fieldset>
+
+        <label for="comments">Please provide Comments</label>
+        <textarea id="comments" name="comments" cols="30" rows="10">default</textarea>
+
+        <input type="submit" name="submit" id="send-form" value="Send this form!">
+    </form>
+</body>
+</html>

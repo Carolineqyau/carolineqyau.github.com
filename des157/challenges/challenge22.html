@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Challenge 22</title>
+</head>
+<body>
+
+    <h1>JS Event Challenge 22</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque tempore nulla facere, ex explicabo optio numquam cupiditate cumque aliquam quo ipsa quod, ipsum iusto earum minima? Odit aut repellendus distinctio!</p>
+    <button>Turn Green!</button>
+
+    <script>
+        var pTag = document.querySelector('p');
+        var btn = document.querySelector('button');
+        btn.onclick = function(){
+            pTag.style.color = "green";
+        }
+    </script>
+
+    <!-- btn.addEventListener('click', function(){
+            pTag.style.color = "green";
+        }); -->
+</body>
+</html>

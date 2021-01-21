@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Challenge 27</title>
+</head>
+<body>
+
+    <h1>JS Event Challenge 27</h1>
+    <form>
+        <label>Enter a number <input type="text"></label>
+        <input type="submit" value="send number">
+    </form>
+
+    <script>
+    
+        var h1Tag = document.querySelector('h1');
+        var formTag = document.querySelector('form');
+
+        formTag.addEventListener('submit', function(event){
+            event.preventDefault();
+            var myNum = parseInt(document.querySelector('input').value);
+            if (myNum){
+                h1Tag.style.fontSize = myNum + "px";
+            }
+            else {
+                alert('please enter a number');
+            }
+        });
+
+    </script>
+
+    <!-- btn.addEventListener('click', function(){
+            pTag.style.color = "green";
+        }); -->
+</body>
+</html>

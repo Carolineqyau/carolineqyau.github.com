@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Challenge 24</title>
+</head>
+<body>
+
+    <h1>JS Event Challenge 24</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias architecto quae hic quia temporibus autem reiciendis maiores sapiente aut nam similique rerum mollitia provident, enim ut dolore accusamus eius facilis.</p>
+    </div>  
+    <button>Add a paragraph</button>
+
+    <script>
+    
+        var divTag = document.querySelector('div');
+        var btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(){
+            var newP = document.createElement('p');
+            var pText = document.createTextNode('A new paragraph');
+            newP.appendChild(pText);
+            divTag.appendChild(newP);
+        });
+
+    </script>
+
+    <!-- btn.addEventListener('click', function(){
+            pTag.style.color = "green";
+        }); -->
+</body>
+</html>

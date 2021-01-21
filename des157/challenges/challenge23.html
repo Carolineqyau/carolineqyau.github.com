@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Challenge 23</title>
+</head>
+<body>
+
+    <h1>JS Event Challenge 23</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque tempore nulla facere, ex explicabo optio numquam cupiditate cumque aliquam quo ipsa quod, ipsum iusto earum minima? Odit aut repellendus distinctio!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur illo eos eaque est reiciendis dolores culpa cum esse nam in doloribus veritatis, quaerat atque distinctio unde sit numquam rerum nulla!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias architecto quae hic quia temporibus autem reiciendis maiores sapiente aut nam similique rerum mollitia provident, enim ut dolore accusamus eius facilis.</p>
+    <button>Turn Green!</button>
+
+    <script>
+        var pTags = document.querySelectorAll('p');
+        var btn = document.querySelector('button');
+        
+        // btn.onclick = function(){
+        btn.addEventListener('click', function(){
+            for (var i=0; i<pTags.length; i++){
+                pTags[i].style.color = "green";
+            }
+        });
+    </script>
+
+    <!-- btn.addEventListener('click', function(){
+            pTag.style.color = "green";
+        }); -->
+</body>
+</html>
