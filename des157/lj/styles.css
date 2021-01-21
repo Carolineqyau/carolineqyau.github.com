@@ -30,7 +30,7 @@ body {
 .blur {
     width: 100vw;
     height: 100vh;
-    backdrop-filter: blur(50px);
+    /* backdrop-filter: blur(50px); */
 }
 
 header h1 {
@@ -118,3 +118,4 @@ footer p a:hover {
     article img {
         width: 80vw;
     }
+}

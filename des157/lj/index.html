@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <title>Learning Journal</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <h2>Lazy Loading with JavaScript</h2>
                 <time datetime="2021-01-22">January 22, 2021</time>
                 <p>For even faster image load time, it is possible to use JavaScript for lazy loading. Here is a <a href="https://web.dev/fast/#lazy-load-images-and-video">website</a> I found that contains a comprehensive list of design principles and methods to optimize image load time. Lazy-loading is a technique that defers loading of non-critical resources at page load time. Instead, these non-critical resources are loaded at the moment of need. Where images are concerned, "non-critical" is often synonymous with "off-screen". A good example is the platform <a href="https://medium.com/">Medium</a> who uses loads lightweight placeholder images at page load, typically a 20px wide small image below 30 bytes with blur filter applied over it, and replaces them with lazily-loaded images as they're scrolled into the viewport. Aside from JavaScript lazy loading, they also provide insight on how to optimize CSS, webfonts and other contents of a website.</p>
-                <img src="images/medium.jpg">
+                <img src="images/medium.jpg" alt="medium">
 
             </article>
 
@@ -29,7 +29,7 @@
                 <h2>Common device screen resolutions for best practices of responsive design</h2>
                 <time datetime="2021-01-21">January 21, 2021</time>
                 <p><a href="https://screensizemap.com/">This interesting site</a> illustrated the most commonly used device screen dimensions for designers. I noticed on my image-heavy portfolio site, it often takes a long time to load which decreases user experience. In order to resize my images for the srcset, I needed to know which dimensions should I focus on resizing to. This webpage along with <a href="https://ios-resolution.com/">this other website</a> provided me great reference for the best design practices for image resizing and responsive web design. The width that I chose to focus on are: 400w, 800w, 1080w, 1280w, 1440w, 1600w and 2560w. For less imporant images, I chose to focus on just 800w, 1280w and 2560w.</p>
-                <img src="images/device.png">
+                <img src="images/device.png" alt="device">
 
             </article>
 
@@ -43,7 +43,7 @@
                 <h2>Highlight Text Animation</h2>
                 <time datetime="2021-01-19">January 19, 2021</time>
                 <p>I saw a <a href="http://wantinghuang.com/index.html">portfolio</a> using highlight animation as the user scroll through the page, which was really cool. I searched up on how it can be implemennted and found that the mark tag or the span tag are particularly useful in this case.</p>
-                <img src="images/highlight.png">
+                <img src="images/highlight.png" alt="highlight">
                 
             </article>
 
@@ -51,7 +51,7 @@
                 <h2>Optimize Responsive Images</h2>
                 <time datetime="2021-01-18">January 18, 2021</time>
                 <p>I came across two articles that discuss the effective optimization of image-heavy websites. They speed up image load time by <a href="https://codeburst.io/5-steps-to-speed-up-your-image-heavy-website-65c874a86966 ">incorporating srcset</a> that decides which image size to use according to device type, as well as <a href="https://formidable.com/blog/2019/responsive-images/">taking display pixel resolution (DPR)</a> into consideration (1x, 2x). By selecting the appropriate image width that matches the size and resolution it will be displayed on devices, this will decrease image load time and prevent loading a large sized image to merely be displayed on a small phone.</p>
-                <img src="images/srcset.png">
+                <img src="images/srcset.png" alt="srcset">
             </article>
     
 
