@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events - Basic Examples</title>
+</head>
+<body>
+    <h1>JavaScript Events</h1>
+    <button>Don't Click Me!</button>
+    <a href="google.com">Link to Google</a>
+
+    <script>
+        var btn = document.querySelector('button');
+        var link = document.querySelector('a');
+
+        /* function ouch(){
+            alert("I said, don't click me!");
+        } */
+
+        //event property:
+        //btn.onclick = ouch; 
+        // don't put parenthesis cuz it'll make it run rightaway
+        // btn.onclick = ouch();
+
+        /* btn.onclick = function(){
+            alert("I said, don't click me!");
+        } */
+
+        //event method: can listen to multiple events, and removeEventListener
+        //btn.addEventListener('click', ouch); //type of event to listen for, 
+
+        btn.addEventListener('click', function(event){ 
+            event.target.style.backgroundColor = "red";
+            alert("Dont't click me!"); 
+        });
+        //event object: passed into function
+
+        link.addEventListener('click', function(event){
+            event.preventDefault();
+            alert("you can't go to google");
+        });
+
+    </script>
+</body>
+</html>
