@@ -626,6 +626,12 @@ footer ul li a:hover {
         font-family: 'Ubuntu', sans-serif;
     }
 
+    .about img {
+        width: 370px;
+        height: 100%;
+        margin: 10px;
+    }
+
     footer div {
         padding-left: 20px;
         padding-right: 30px;
