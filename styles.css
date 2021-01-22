@@ -252,6 +252,10 @@ section {
     
 }
 
+.transition {
+    display: inline-block;
+}
+
 /* section::after{
     content: "";
     position: absolute;
@@ -323,7 +327,7 @@ section h3 a:hover {
     margin-top: 4px;
     font-weight: 500;
     font-size: 1.2em;
-    color: #7E7EB7;
+    color: #65659B;
     font-family: 'Ubuntu', sans-serif;;
 }
 
