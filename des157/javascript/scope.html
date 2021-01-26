@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in JavaScript</title>
+</head>
+<body>
+    <h1>Scope in JavaScript</h1>
+    <p>Here is a paragraph</p>
+    <p>Here is a paragraph</p>
+    <p>Here is a paragraph</p>
+    
+    <script>
+        /* var aVariable = "This is global";
+        function testScope(){
+            oopsGlobal = "This is global by accident"; //belongs to window not function because didn't put var
+            var aVariable = "This is local";
+            console.log(aVariable);
+        }
+        testScope();
+        console.log(oopsGlobal); */
+
+        //IIFE Immediate Invoked Function Expression (function(){}());
+        /* (function(){
+            var myPs = document.querySelectorAll('p');
+
+            for (var i=0; i<myPs.length; i++){
+                myPs[i].style.color = "red";
+            }
+            //these variables are now local. 
+        }());
+        //closures in JS. Keep variables inside closure, can also get out.
+
+        console.log(myPs); */ //error, cant access in global scope.
+        
+        /* "use strict"; //directive, keep from accidentally forgetting var
+        var newVar = "not properly defined";
+        console.log(newVar);
+
+        console.log(cheese); //var would hoist variables to the top, know it exists
+        const cheese = "yummy"; */ //use const and let as keywords for defining variables
+
+        //const cannot be changed while the script runs. Let allows change, block level scope.
+        //eg let is only available in the for loop block.
+
+        //cheese = "cheese is yucky";
+
+        for (let i=0; i<10; i++){
+            console.log(i);
+        }
+    
+        console.log(`the value of i is ${i}`);
+
+        
+    </script>
+    
+</body>
+</html>
