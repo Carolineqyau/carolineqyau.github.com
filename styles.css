@@ -283,8 +283,8 @@ section:hover {
 } */
 
 section video {
-    /* width: auto; */
-    /* height: 114%; */
+    width: auto;
+    height: 114%;
 }
 
 .video-container {

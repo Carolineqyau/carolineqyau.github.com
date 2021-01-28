@@ -1,0 +1,29 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+label, input {
+    display: block;
+    
+}
+input, select {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.form {
+    position: absolute;
+    right: 500px;
+}
