@@ -1,29 +1,126 @@
 body {
     font-family: 'Ubuntu', sans-serif;
+    background-color: #1D4E9E;
+    margin: 0;
+}
+
+header {
+    margin: 0;
+}
+
+img {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    /* height: 120vh; */
 }
 
 h1 {
     font-weight: 700;
+    font-size: 70px;
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    color: #FFFFFF;
+    text-shadow: -6px 3px 0px #97BAF2;
 }
 
-label, input {
+/* label, input {
     display: block;
-    
-}
+} */
+
 input, select {
     margin-bottom: 20px;
 }
 
 input {
     padding: 5px;
-    width: 200px;
+    padding-left: 10px;
+    background-color: #E5F1FF;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    box-shadow: inset 0 0 1px 2px #92BCFF;
+    transition: 0.2s ease-out;
+}
+
+::placeholder {
+    color: #9CC2FD;
+}
+
+input:hover {
+    background-color: #C2DFFE;
+}
+
+input:hover::placeholder {
+    color: #659DF6;
+}
+
+/* input::selection {
+    background-color: #C2DFFE;
+} */
+
+input:focus {
+    color: #4082EE;
+    background-color: #C2DFFE;
+    /* box-shadow: inset 0 0 1px 2px #92BCFF; */
+}
+
+input:valid {
+    color: #4082EE;
+    box-shadow: 0 3px 6px 0 #3178EA;
 }
 
 label {
     margin-bottom: 10px;
+    color: #1D4E9E;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+    margin-right: 12px;
 }
 
-.form {
+form {
     position: absolute;
-    right: 500px;
+    right: 100px;
+    bottom: 170px;
+    background-color: #FAFCFE;
+    padding-right: 30px;
+    padding-left: 120px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    /* height: 540px; */
+    box-shadow: 0 50px 70px -40px #70A0ED;
+}
+
+#submit {
+    width: 155px;
+    height: 60px;
+    box-shadow: -6px 8px 0px 0px #97BAF2;
+    border-radius: 15px;
+    background-color: #F2F8FF;
+    color: #97BAF2;
+    position: absolute;
+    right: 135px;
+    bottom: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+
+#submit:hover {
+    transform: translate(-6px, 8px);
+    box-shadow: none;
+    /* background-color: #E3F1FF; */
+    font-weight: 900;
+    font-size: 24px;  
+}
+
+::textarea {
+    color: #97BAF2;
 }
