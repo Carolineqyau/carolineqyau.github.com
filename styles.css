@@ -356,12 +356,12 @@ section p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.about h2 {
+#about h2 {
     color: #42424F;
     font-size: 200px;
     margin-bottom: 50px;
 }
-.about p {
+#about p {
     color: #42424F;
     font-size: 30px;
     line-height: 1.5em;
@@ -376,7 +376,7 @@ section p {
     flex-wrap: wrap;
 }
 
-.about img {
+#about img {
     width: 400px;
     height: 100%;
     margin: 10px;
@@ -469,10 +469,15 @@ footer ul li a:hover {
     .text-container{
         /* padding: 20px; */
         max-width: 30vw;
-    
+    }
+    #about h2 {
+        font-size: 120px;
+    }
+
+    #about p {
+        font-size: 26px;
+    }
 }
-
-
 
 
 @media only screen and (max-width: 720px) {
@@ -517,11 +522,11 @@ footer ul li a:hover {
         font-size: 40px;
     }
 
-    main {
+    /* main { */
         /* margin-left: 30px; */
         /* margin-right: 30px; */
         /* margin-bottom: 50px; */
-    }
+    /* } */
 
     article {
         /* padding: 10px; */
@@ -562,6 +567,21 @@ footer ul li a:hover {
         /* margin-left: 20px;
         margin-right: 20px;
         padding-top: 10px; */
+    }
+
+    #about h2 {
+        font-size: 80px;
+        padding-left: 0;
+        margin: 20px;
+    }
+
+    #about p {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    #about img {
+        width: 380px;
     }
 
     footer div {
@@ -637,19 +657,22 @@ footer ul li a:hover {
         font-size: 1em;
     }
 
-    .about h2 {
-        font-size: 100px;
-        margin-bottom: 30px;
+    /* #about div {
+        margin: 10px;
+    } */
+    #about h2 {
+        font-size: 60px;
+        padding-left: 0;
     }
-    .about p {
+    #about p {
         color: #42424F;
-        font-size: 24px;
-        line-height: 1.2em;
+        font-size: 18px;
+        line-height: 1.5em;
         font-family: 'Ubuntu', sans-serif;
     }
 
-    .about img {
-        width: 370px;
+    #about img {
+        width: 350px;
         height: 100%;
         margin: 10px;
     }
@@ -714,6 +737,11 @@ footer ul li a:hover {
 
     nav ul li a:hover:after {
         width: 65%;
+    }
+
+    #about img {
+        width: 300px;
+        height: auto;
     }
 
 }
