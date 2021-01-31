@@ -319,7 +319,11 @@ section video {
 
 .text-container {
     padding: 20px;
-    max-width: 20vw;
+    max-width: 26vw;
+}
+
+.text-container p {
+    line-height: 1.5em;
 }
 
 section h3 {
@@ -359,12 +363,14 @@ section p {
 }
 .about p {
     color: #42424F;
-    font-size: 50px;
-    line-height: 1.3em;
+    font-size: 30px;
+    line-height: 1.5em;
+    font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .photo-container {
+    margin-top: 60px;
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
