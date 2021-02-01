@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #d9d9d9;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: whitesmoke;
+    /* background-color: #d9d9d9; */
     /* background-image: url(images/clouds.JPG); */
     /* background-image: url(images/background-400w.jpg); */
     /* background-size: 100vw; */
@@ -17,7 +18,8 @@ body {
     top: 0;
     z-index: 10;
     width: 100vw;
-    background-color: #d9d9d9;
+    background-color: whitesmoke;
+    /* background-color: #d9d9d9; */
     /* background-color: #e3e3e3; */
     /* box-shadow: 0 20px 60px -25px #988a78; */
 
@@ -38,7 +40,7 @@ body {
     margin-left: 0px;
     margin-top: 0px;
     border-radius: 0 0 50px 0px;
-
+    
     /* position: absolute; */
     display: inline-block;
     vertical-align: middle;
@@ -47,7 +49,8 @@ body {
     top: 0;
     z-index: 11;
     /* backdrop-filter: blur(15px); */
-    background-color: #d9d9d9;
+    /* background-color: #d9d9d9; */
+    background-color: whitesmoke;
     /* background-color: #e3e3e3; */
     /* box-shadow: 0 20px 60px -25px #988a78; */
     padding-bottom: 10px;
@@ -139,6 +142,16 @@ nav ul li a:hover::before {
     color: lightcoral;
 } */
 
+#topimage {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#topimage img {
+    width: 100vw;
+}
+
 #name {
     width: 50vw;
     margin-left: 50px;
@@ -146,12 +159,12 @@ nav ul li a:hover::before {
     /* height: 30vh;
     padding-top: 20vh;
     padding-bottom: 20vh; */
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 0;
+    padding: 100px;
+    margin-bottom: 50px;
     text-align: left;
     background-color: #e3e3e3;
-    box-shadow: 15px 35px 60px -45px #988a78;
+    box-shadow: 20px 45px 60px -45px #988a78;
+    background-image: ;
 }
 
 #project {
@@ -162,7 +175,6 @@ nav ul li a:hover::before {
     padding-right: 50px;
     margin-top: 0;
     margin-bottom: 0; */
-    padding-top: 100px;
     margin-bottom: 50px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -176,6 +188,8 @@ nav ul li a:hover::before {
     line-height: 1.5em;
 }
 
+#name h3 {
+}
 
 /* .front-background img {
     position: absolute;
@@ -184,17 +198,36 @@ nav ul li a:hover::before {
     z-index: -2;
 } */
 
-.miro {
-    display: flex;
+main {
+    margin-left: 800px;
+    margin-right: 500px;
+    display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
-    overflow: visible;
+    overflow: hidden;
+}
+
+.miro {
+    display: block;
+    /* justify-content: center;
+    flex-wrap: wrap;
+    overflow: visible; */
 }
 
 .miro img {
-    width: 800px;
+    text-align: center;
+    width: 600px;
+    height: auto;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+.miro p {
+    font-size: 24px;
+}
+
+.inline {
+    display: inline-flex;
 }
 
 .large {
