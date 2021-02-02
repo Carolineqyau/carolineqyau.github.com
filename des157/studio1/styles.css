@@ -113,6 +113,23 @@ form {
     transition-duration: 0.2s;
 }
 
+/* #return {
+    width: 155px;
+    height: 60px;
+    box-shadow: -6px 8px 0px 0px #97BAF2;
+    border-radius: 15px;
+    background-color: #F2F8FF;
+    color: #97BAF2;
+    position: absolute;
+    right: 135px;
+    bottom: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    transition: ease-in;
+    transition-duration: 0.2s;
+    display: "none";
+} */
+
 #submit:hover {
     transform: translate(-6px, 8px);
     box-shadow: none;
@@ -121,6 +138,39 @@ form {
     font-size: 24px;  
 }
 
-::textarea {
+/* #return:hover {
+    transform: translate(-6px, 8px);
+    box-shadow: none;
+    background-color: #E3F1FF;
+    font-weight: 900;
+    font-size: 24px;  
+} */
+
+#result {
+    width: 300px;
+    bottom: 200px;
+    line-height: 2em;
+    /* display: none; */
+    color: #1D4E9E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ::textarea {
     color: #97BAF2;
+} */
+
+footer {
+    padding-top: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 20px;
+}
+
+footer p a {
+    color: #5B87E8;
+    text-decoration: none;
 }
