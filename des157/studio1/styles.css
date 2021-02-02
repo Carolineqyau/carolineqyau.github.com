@@ -85,6 +85,7 @@ label {
 }
 
 form {
+    border-radius: 30px;
     position: absolute;
     right: 100px;
     bottom: 170px;
