@@ -1,7 +1,9 @@
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
     background-color: whitesmoke;
+    color: #222223;
     /* background-color: #d9d9d9; */
     /* background-image: url(images/clouds.JPG); */
     /* background-image: url(images/background-400w.jpg); */
@@ -147,7 +149,7 @@ nav ul li a:hover::before {
 
 #topimage {
     position: relative;
-    top: 0;
+    top: 55px;
     left: 0;
     margin-bottom: 100px;
 }
@@ -167,8 +169,14 @@ nav ul li a:hover::before {
 
 .process p a {
     text-decoration: none;
-    color: limegreen;
+    color: #81BAF2;
+    /* color: #33A361; */
 }
+
+.process p a:hover {
+    color: #467ECE;
+}
+
 /* 
 #problem {
     margin-left: 100px;
@@ -178,7 +186,7 @@ nav ul li a:hover::before {
 .name {
     display: inline-flex;
     width: 900px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     margin-top: 50px;
     /* height: 30vh;
     padding-top: 20vh;
@@ -198,7 +206,7 @@ nav ul li a:hover::before {
 }
 
 #role {
-    padding-top: 100px;
+    /* padding-top: 50px; */
 }
 
 #role h4 {
@@ -220,19 +228,21 @@ nav ul li a:hover::before {
     margin-top: 0;
     margin-bottom: 0; */
     margin-bottom: 50px;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
     font-weight: bold;
     font-size: 120px;
     line-height: 1.3em;
-    color: black;
+    /* color: black; */
 }
 
 .name p {
     font-size: 18px;
     line-height: 1.5em;
+
 }
 
-.name h3 {
+.name h4, .name h3 {
+    color: #9AC5F7;
 }
 
 /* .front-background img {
@@ -242,27 +252,25 @@ nav ul li a:hover::before {
     z-index: -2;
 } */
 
-main {
-    font-family: 'Source Sans Pro', sans-serif;
-    /* display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden; */
-}
 
 main h2 {
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 30px;
     padding-bottom: 20px;
     margin-top: 100px;
+    color: #4A688B;
 }
 
 main h3 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     padding-top: 30px;
+    /* color: #33A361; */
 }
 
 main h4 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     margin-bottom: 0;
 }
@@ -293,27 +301,37 @@ main img {
     margin-top: 50px;
 }
 
+.right {
+    display: flex;
+    margin-right: 50px;
+}
+
 .inline {
     display: inline-block;
 }
 
 .inline img {
-    width: 600px;
+    width: 700px;
 }
 
 .prototype {
     display: inline-block;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .prototype img {
-    width: 200px;
+    width: 250px;
     box-shadow: none;
 }
 
 .large {
-    width: 1080px;
+    display: inline-block;
+}
+
+.large img {
+    height: 800px;
+    width: auto;
 }
 
 main {
@@ -322,7 +340,7 @@ main {
     margin-right: 50px;
     margin-bottom: 60px;
     /* background: rgba( 255, 255, 255, 0.25 ); */
-    color: #202023;
+    color: #404147;
     /* background: rgba(30, 5, 50, 0.1 ); */
     /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
     /* backdrop-filter: blur( 4px ); */
@@ -341,7 +359,7 @@ article {
 }
 
 article h2 {
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
     font-size: 40px;
     font-weight: 900;
     color: whitesmoke;
@@ -627,8 +645,12 @@ footer ul li a:hover {
 }
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1030px) {
 
+    .navbar {
+        background-color: rgba(245, 245, 245, 0.9);
+        backdrop-filter: none;
+    }
     .logo {
         /* margin-left: 20px;
         margin-top: 10px; */
