@@ -1,0 +1,46 @@
+body {
+    font-family: arial;
+    color: #333;
+    padding-top: 200px;
+    line-height: 1.4em;
+}
+
+main {
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.showing {
+    visibility: showing;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}

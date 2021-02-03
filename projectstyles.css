@@ -161,6 +161,7 @@ nav ul li a:hover::before {
 .process {
     padding-left: 300px;
     padding-right: 300px;
+    /* width: 1000px; */
 }
 
 .process p {
@@ -256,7 +257,7 @@ nav ul li a:hover::before {
 main h2 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     padding-bottom: 20px;
     margin-top: 100px;
     color: #4A688B;
@@ -264,19 +265,19 @@ main h2 {
 
 main h3 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 24px;
+    font-size: 25px;
     padding-top: 30px;
     /* color: #33A361; */
 }
 
 main h4 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
+    font-size: 13px;
     margin-bottom: 0;
 }
 
 main p {
-    line-height: 30px;
+    line-height: 1.5em;
     /* font-weight: 400; */
 }
 
