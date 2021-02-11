@@ -164,6 +164,11 @@ nav ul li a:hover::before {
     /* width: 1000px; */
 }
 
+.process ul li {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
 .process p {
     font-size: 18px;
 }

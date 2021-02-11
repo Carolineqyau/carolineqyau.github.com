@@ -81,6 +81,10 @@ article img {
     border-radius: 20px;
 }
 
+figure img {
+    width: 400px;
+}
+
 article p a:hover {
     color: #6666FF;
 }
