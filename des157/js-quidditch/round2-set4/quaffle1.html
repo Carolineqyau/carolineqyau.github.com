@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quaffle 1</title>
+	<style>
+		p {
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Quaffle 1</h1>
+	<p>Find two errors!</p>
+
+	<h2>The Dementors Are Coming!</h2>
+	<p id="myParagraph">I am feeling cold!</p>
+
+	<button id="mylink">Cast a patronus</button>
+
+	<script>
+		var theLink = document.getElementById("mylink")
+		theLink.addEventListener('click', function() {
+			var contents = document.getElementById("myParagraph").innerHTML;
+
+			if(contents == "I am feeling cold!") {
+			document.getElementById("myParagraph").innerHTML = "The dementors flee!";
+			document.getElementById("myParagraph").style.color = "black";
+			document.getElementById("mylink").innerHTML = "Your patronus fades";
+		}
+			else {
+			document.getElementById("myParagraph").innerHTML = "I am feeling cold!";
+			document.getElementById("myParagraph").style.color = "blue";
+			document.getElementById("mylink").innerHTML = "Cast a patronus";
+		}
+		});
+	</script>
+
+</body>
+
+</html>

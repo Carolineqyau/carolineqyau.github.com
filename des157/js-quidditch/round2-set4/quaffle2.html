@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quaffle 2</title>
+</head>
+
+<body>
+    <h1>Quaffle 2</h1>
+    <p>Find two errors!</p>
+
+    <h2>You Meet Death</h2>
+    <p id="answer">Answer</p>
+
+    <script>
+
+        const hallows = ["invisibility cloak", "death stick", "resurrection stone"];
+        const hallowChoice = parseInt(prompt("Death asks you to pick a gift. Choose a number from 1 - 3", ""));
+        if (hallowChoice > 0 && hallowChoice < 4) {
+            document.querySelector("p").innerHTML = `You might escape Death with a ${hallows[hallowChoice-1]}`;
+        }
+        else {
+            document.querySelector("#answer").innerHTML = "You didn't enter a number from 1 - 3";
+        }
+
+    </script>
+
+</body>
+
+</html>

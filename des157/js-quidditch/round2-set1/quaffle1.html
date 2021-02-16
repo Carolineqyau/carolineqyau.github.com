@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quaffle 1</title>
+</head>
+
+<body>
+	<h1>Quaffle 1</h1>
+	<p>Find two errors!</p>
+
+	<h2>Harry Potter and Voldemort Duel to the Death!</h2>
+	<p id="results"></p>
+	<button id="mybutton">Decide The Winner</button>
+
+
+	<script>
+		document.getElementById("mybutton").addEventListener('click', pickWinner);
+
+		function pickWinner() {
+
+			if (confirm("click ok to choose Harry Potter, cancel to choose Voldemort")) {
+				document.getElementById("results").innerHTML = "Harry Wins!";
+			}
+			else {
+				document.getElementById("results").innerHTML = "Voldemort Wins!";
+			}
+		}
+	</script>
+</body>
+
+</html>

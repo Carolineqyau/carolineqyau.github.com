@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quaffle 2</title>
+</head>
+
+<body>
+    <h1>Quaffle 2</h1>
+    <p>Find two errors!</p>
+
+    <div>
+        <h2>Ravenclaw goes up against Hufflepuff in Quidditch</h2>
+        <button id="match">Who Wins?</button>
+        <p>Click the button to see who wins</p>
+    </div>
+
+    <script>
+
+        var bttn = document.getElementById("match");
+        var winnerElement = document.querySelector("div p");
+
+        bttn.addEventListener("click", function() {
+            var randomNum = Math.ceil(Math.random() * 10);
+            if (randomNum < 6) {
+                winnerElement.innerHTML = "Ravenclaw Wins!";
+                winnerElement.style.color = "blue";
+                winnerElement.style.backgroundColor = "brown";
+            }
+            else {
+                winnerElement.innerHTML = "Hufflepuff Wins!";
+                winnerElement.style.color = "yellow";
+                winnerElement.style.backgroundColor = "black";
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
