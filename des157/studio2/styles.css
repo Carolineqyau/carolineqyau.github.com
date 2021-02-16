@@ -46,25 +46,26 @@ footer p a:hover {
     padding-bottom: 10vh;
 }
 
-
 img {
     width: 329px;
     height: auto;
     /* padding: 10px; */
-    transition: 0.2s ease;
+    transition: all 0.5s ease;
 }
 
 .large img {
     position: absolute;
     width: 668px;
-    margin-bottom: 10vh;
-    transition: 0.2s ease;
+    /* margin-bottom: 10vh; */
+    transition: all 0.5s ease;
 } 
 
 img:hover {
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    filter: saturate(130%);
+    filter: brightness(120%);
+    /* filter: contrast(120%) */
 }
-
 
 #resizer1 img {
     height: 501px;
@@ -74,24 +75,18 @@ img:hover {
     height: 488px;
 }
 
-/* #overlay {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.9);
+#overlay {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* backdrop-filter: blur(5px); */
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 9;
+    transition: all 0.5s ease;
+    visibility: hidden;
 }
-
-#overlay selected {
-    height: 80vh;
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: (-50%, -50%);
-    overflow-y: scroll;
-} */
 
 .hidden {
     display: none;
@@ -102,20 +97,24 @@ img:hover {
 }
 
 .select {
-    position: absolute;
+    position: fixed;
     /* display: flex; */
     /* justify-self: center; */
     /* max-height: 90vh; */
     transition: all 0.5s ease;
-    transform: scale(2);
-    top: 40%;
+    transform: scale(1.7);
+    /* margin: auto; */
+    top: 30%;
     left: 40%;
     /* transform: translate(-50%, -50%); */
+    /* margin-top: 160px; */
+    /* margin-left: 160px; */
     z-index: 10;
     overflow-y: scroll;
 }
 
 .select:hover {
-    filter: brightness(50%);
+    filter: brightness(100%);
+    filter: saturate(100%);
     opacity: 1;
 }
