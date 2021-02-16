@@ -11,8 +11,8 @@
         <img src="images/image1.jpg" alt="slideshow image" id="myimage">
     </div>
 
-    <button id="previous">previous</button> 
-    <button id="next">next</button>
+    <!-- <button id="previous">previous</button> 
+    <button id="next">next</button> -->
 
     <script>
         const myImages = [
@@ -25,7 +25,9 @@
         let currentImage = 0;
 
         const slide = document.getElementById('myimage');
-        document.getElementById('next').addEventListener('click', nextPhoto);
+        // document.getElementById('next').addEventListener('click', nextPhoto);
+
+        setInterval(nextPhoto, 2000);
 
         function nextPhoto(){
             currentImage++; //increment the counter
@@ -36,7 +38,7 @@
             slide.src = `images/${myImages[currentImage]}`;
         }
 
-        document.getElementById('previous').addEventListener('click', previousPhoto);
+        // document.getElementById('previous').addEventListener('click', previousPhoto);
 
         function previousPhoto(){
             currentImage--;
