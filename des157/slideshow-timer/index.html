@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic JavaScript Slideshow</title>
+</head>
+
+<body>
+    <div>
+        <img src="images/image1.jpg" alt="slideshow image" id="myimage">
+    </div>
+
+    <button id="previous">previous</button> 
+    <button id="next">next</button>
+
+    <script>
+        const myImages = [
+        'image1.jpg', 
+        'image2.jpg', 
+        'image3.jpg', 
+        'image4.jpg', 
+        'image5.jpg'];
+    
+        let currentImage = 0;
+
+        const slide = document.getElementById('myimage');
+        document.getElementById('next').addEventListener('click', nextPhoto);
+
+        function nextPhoto(){
+            currentImage++; //increment the counter
+            if (currentImage > myImages.length-1) {
+                currentImage = 0;
+            }
+            //set the source for the slide to the next image
+            slide.src = `images/${myImages[currentImage]}`;
+        }
+
+        document.getElementById('previous').addEventListener('click', previousPhoto);
+
+        function previousPhoto(){
+            currentImage--;
+            if (currentImage < 0){
+                currentImage = myImages.length-1;
+            }
+            slide.src = `images/${myImages[currentImage]}`;
+        }
+
+
+    </script>
+    
+
+</body>
+
+</html>
