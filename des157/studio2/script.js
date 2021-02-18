@@ -18,13 +18,17 @@
             event.preventDefault();
             let selection = event.target; //the target of click event is the selected image
             let originalWidth = selection.clientWidth; //get the width of loaded image on website
+            // let originalPosition = selection.style.position;
+            // console.log(originalPosition);
             if (!sel){
                 // selection.style.marginTop = `-${selection.clientHeight/2}`;
                 // selection.style.marginLeft = `-${selection.clientWidth/2}`;
                 selection.classList.add("select"); //add select class to format the clicked image 
+                // selection.style.position = "fixed";
                 lay.style.visibility = "visible";
             } else {
                 selection.classList.remove("select");
+                // selection.style.position = originalPosition;
                 lay.style.visibility = "hidden";
             }
             sel = !sel

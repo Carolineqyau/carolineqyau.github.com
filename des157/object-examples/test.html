@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Objects</title>
+</head>
+
+<body>
+    <h1>Working with Objects</h1>
+    <script>
+        /* const person = { 
+            fname: "George", 
+            lname: "Washington", 
+            age: 25,
+            pets: ["dog", "cat", "chicken", "llama"],
+            phonenumber: {
+                home: "916-123-4567",
+                work: "916-432-8765",
+                cell: "916-456-7890"
+            }
+            greeting: function(){
+                console.log(`hello ${this.fname} ${this.lname}`)
+            }; //this refers to parent object
+        }; //keys don't go in quotes
+
+        console.log(person.fname);
+
+        const person = new Object();
+        person.firstname = "John";
+        person.lastname = "Smith";
+        person.age = 25;
+
+        console.log(person.pets[2]); //chicken
+        console.log(person.phonenumber.cell);
+        person.greeting(); //run the function inside object (method)
+ */
+        /* function person (firstname, lastname, age, eye) {
+            this.firstname = firstname,
+            this.lastname = lastname;
+            this.age = age;
+            this.eyecolor = eye;
+        }
+        const myFather = new Person('George', 'Mead', 85, 'brown');
+        const myMother = new Person('Mary', 'Mead', 80, 'brown');
+
+        console.log(myMother.firstname); */
+
+        function printableMessage(){
+            let message = 'hello';
+
+            function printMessage(){
+                console.log(message);
+            }
+            function setMessage(newMessage){
+                message = newMessage;
+            }
+            return {
+                printMessage: printMessage,
+                setMessage: setMessage
+            };
+        }
+
+        const awesome1 = printableMessage(); //instance of a function expression
+        awesome1.printMessage();
+
+        const awesome2 = printableMessage();
+        awesome2.setMessage('hi');
+        awesome2.printMessage();
+
+    </script>
+</body>
+
+</html>
