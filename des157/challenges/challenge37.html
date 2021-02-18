@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Challenges</title>
+</head>
+<body>
+    <h1>Challenge 37</h1>
+    <form id="addpet">
+        <label>Name <input type="text" name="name" id="name"></label><br><br>
+        <label>Species <input type="text" name="species" id="species"></label><br><br>
+        <label>Greeting <input type="text" name="greeting" id="greeting"></label><br><br>
+        <input type="submit" value="add pet">
+    </form>
+
+    <script>
+        /* var pet = {
+            name: "rocky", 
+            species: "Hampster"
+        }
+
+        pet.name = "Bouncer";
+        pet.species = "dog";
+        pet.qualities = {
+            color: "brown",
+            size: "medium",
+            disposition: "friendly"
+        }
+
+        console.log(pet);
+        pet.qualities.supplies = ["dog food", "dog bed", "treats", "collar", "leash"];
+        console.log(`I need to get ${pet.qualities.supplies.length} supplies for ${pet.name} at the store.`);
+   
+        pet.greeting = function() { alert("woof woof woof"); };
+        pet.greeting(); */
+
+        function pet(name, species, greeting) {
+            this.name = name;
+            this.species = species;
+            this.greeting = function(){alert(greeting)};
+        }
+
+        document.getElementById('addpet').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var petName = document.getElementById('name').value;
+            var petSpecies = document.getElementById('species').value;
+            var petGreeting = document.getElementById('greeting').value;
+
+            var myPet = new pet( petName, petSpecies, petGreeting);
+            console.log(myPet);
+        });
+    </script>
+    
+</body>
+</html>
