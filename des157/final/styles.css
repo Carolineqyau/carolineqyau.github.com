@@ -1,0 +1,30 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5em;
+    background-color: #FAF6FF;
+    color: #3E3E3E;
+    margin: auto;
+    /* text-align: center; */
+    width: 800px;
+}
+
+header {
+    text-align: center;
+    margin: 100px 50px 80px 50px;
+}
+
+header p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+section {
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+h2{
+    margin-top: 50px;
+    color: #C05AFF;
+}
