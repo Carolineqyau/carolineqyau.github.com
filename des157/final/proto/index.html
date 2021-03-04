@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Survey</title>
+</head>
+<body>
+    <header>
+        <img id="gradient" src="images/gradient.svg" alt="nav-background">
+        <img id="nav" src="images/nav.svg" alt="nav-background">
+        <img id="logo" src="images/logo.svg" alt="background" width="53" height="61">
+        <img id="foot" src="images/foot.svg" alt="footer-background">
+        <h1>Survey</h1>  
+    </header>
+
+    <main>
+        <form id="fill">
+            <h1>Which features do you use most often?</h1>
+            <radio></radio>
+            <label for="product">Product/Service</label>
+            <input type="text" name="product" id="product" placeholder="Mask Stand" required>
+            <br>
+            <label for="customer">Customer Segment</label>
+            <input type="text" name="customer" id="customer" placeholder="local college students" required>
+            <br>
+            <label for="goal">Customer Goal</label>
+            <input type="text" name="goal" id="goal" placeholder="protect themselves from Covid-19" required>
+            <br>
+            <!-- <label for="verb1">Gerund Verb 1</label>
+            <input type="text" name="verb1" id="verb1" placeholder="giving out" required>
+            <br> -->
+            <label for="gain">Customer Gain</label>
+            <input type="text" name="gain" id="gain" placeholder="masks for free" required>
+            <br>
+            <!-- <label for="verb2">Gerund Verb 2</label>
+            <input type="text" name="verb2" id="verb2" placeholder="decreasing" required>
+            <br> -->
+            <label for="pain">Customer Pain</label>
+            <input type="text" name="pain" id="pain" placeholder="risk of infection" required>
+            <br>
+            <!-- <label for="competitor">Competitor</label>
+            <input type="text" name="competitor" id="competitor" placeholder="expensive online stores" required> -->
+        </form>
+
+        <input type="submit" name="submit" id="submit" value="Submit!">
+        <input type="return" name="return" id="return" value="Return">
+
+        <form id="result">
+            <p id="output">Our <b id="boldProduct">product</b> helps <b id="boldCustomers">customers</b> who want to <b id="boldGoal">goal</b> by <b id="boldVerb1">increasing</b> <b id="boldGain">gain</b> and <b id="boldVerb2">decreasing</b> <b id="boldPain">pain</b> unlike <b id="boldCompetitor">competitior</b>.<p>
+        </form>
+
+    <!-- <form>
+        <label for favdom>Favorite Domestic Animal</label>
+        <input type="text" name="favdom" id="favdom" placeholder="Dog" required>
+        <br>
+        <label for favwild>Favorite Wild Animal</label>
+        <input type="text" name="favwild" id="favwild" placeholder="Leopard" required>
+        <br>
+        <label for pet>I like petting</label>
+        <select id="pet" name="pet">
+            <option value="paws">Paws</option>
+            <option value="forehead">Forehead</option>
+            <option value="ears">Ears</option>
+            <option value="nose">Nose</option>
+            <option value="tail">Tail</option>
+        </select>
+        <br>
+        <label for="favcolor">Favorite Color</label>
+        <input type="color" id="favcolor" name="favcolor">
+
+    </form> -->
+    </main>
+
+    
+    <footer>
+        <p><a href="&#099;&#097;&#114;&#111;&#108;&#105;&#110;&#101;&#113;&#105;&#110;&#103;&#121;&#117;&#121;&#097;&#117;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Email</a></p>
+        <p><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>
+        <p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+    </footer>
+    
+</body>
+</html>
