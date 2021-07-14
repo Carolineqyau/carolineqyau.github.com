@@ -209,6 +209,7 @@ nav ul li a:hover::before {
 #solution {
     width: 700px;
     margin-right: 100px;
+    align-self: center;
 }
 
 #role {
