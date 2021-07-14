@@ -291,6 +291,13 @@ section video {
     height: 114%;
 }
 
+#fullvid {
+    width: auto;
+    height: 125%;
+    /* bottom: 0; */
+    transform: translateY(-80px);
+}
+
 .video-container {
     margin: 0;
     width: 30vw;
@@ -300,6 +307,7 @@ section video {
     overflow: hidden;
     border-radius: 50px 50px 0px 0px;
 }
+
 
 .image-container {
     margin: 0;
