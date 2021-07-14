@@ -164,7 +164,7 @@ nav ul li a:hover::before {
     /* width: 1000px; */
 }
 
-.process ul li {
+.process ul li, .process ol li {
     font-size: 18px;
     line-height: 1.5em;
 }
@@ -210,10 +210,6 @@ nav ul li a:hover::before {
     width: 700px;
     margin-right: 100px;
     align-self: center;
-}
-
-#role {
-    /* padding-top: 50px; */
 }
 
 #role h4 {
@@ -267,6 +263,18 @@ main h2 {
     padding-bottom: 20px;
     margin-top: 100px;
     color: #9900ff;
+}
+
+main h2 a {
+    color: #cc79f1;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+main h2 a:hover {
+    color: #8f6be2;
+    text-decoration: underline;
+    /* transition: all 0.5s ease; */
 }
 
 main h3 {

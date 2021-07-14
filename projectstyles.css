@@ -265,6 +265,18 @@ main h2 {
     color: #4A688B;
 }
 
+main h2 a {
+    color: #9AC5F7;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+main h2 a:hover {
+    color: #437fc4;
+    text-decoration: underline;
+    /* transition: all 0.5s ease; */
+}
+
 main h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 25px;

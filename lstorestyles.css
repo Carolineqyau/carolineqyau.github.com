@@ -212,9 +212,6 @@ nav ul li a:hover::before {
     align-self: center;
 }
 
-#role {
-    /* padding-top: 50px; */
-}
 
 #role h4 {
     font-size: 20px;
@@ -267,6 +264,18 @@ main h2 {
     padding-bottom: 20px;
     margin-top: 100px;
     color: #6558f0;
+}
+
+main h2 a {
+    color: #b3abf9;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+main h2 a:hover {
+    color: #6a5ed4;
+    text-decoration: underline;
+    /* transition: all 0.5s ease; */
 }
 
 main h3 {
