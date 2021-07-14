@@ -212,10 +212,6 @@ nav ul li a:hover::before {
     align-self: center;
 }
 
-#role {
-    /* padding-top: 50px; */
-}
-
 #role h4 {
     font-size: 20px;
     margin-bottom: 0;

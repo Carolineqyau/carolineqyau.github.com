@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="mindlightstyles.css" rel="stylesheet">
+    <!-- <meta property="og:image" content="images/eco-800w.jpg" />
+    <meta property="og:description" content="A shopping app that recommends alternative sustainable products along with a community feature to share product feedback." />
+    <meta property="og:url" content="https://carolineqyau.github.io/eco.html" />
+    <meta property="og:title" content="ECO" /> -->
+    <title>MindLight</title>
+    <link rel="shortcut icon" type="image/svg" href="images/cylogo-black.svg"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/cylogo-black.svg" alt="CY Logo" width="70" height="70">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="https://www.dropbox.com/sh/ibwmw4w2v4zmh5r/AADfMxMNYfSDoDAjMBm2-1Cda?dl=0" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/carolineqyau" target="_blank" id="github">Github</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="topimage">
+        <img src="images/mindlight-poster-2560w.jpg" alt="L-Store Logic Flow">
+    </div>
+
+    <main>
+        <!-- <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <ul>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                </ul>
+            </ul>
+        </nav> -->
+
+        <div class="process">
+            <h2 id="overview">Motivation</h2>
+            <div id="problem">
+                <h3>Oversleep Problems</h3>
+                <p>Nowadays, many people experience oversleeping problems. I personally sleep for almost twice the time compared to my peers. Furthermore, in daily life, we are interested in knowing more about ourselves and understanding our brain activity fluctuations. </p>
+
+                <p>As a psychology and design double major, minoring in computer science, my motivation is to develop a brain activity wearable that can demonstrate a person’s wakefulness with diffused neopixel light. To process the brain activity data, I will use an OpenBCI board that has a WiFi Shield to transmit data. At the same time, the wearable’s design should be aesthetic and convenient for daily wear (such as a design that looks like a hat for outdoor usage) to prompt more users to incorporate BCI devices into their daily use and monitor brain data more casually.</p>
+            </div>
+        </div>
+
+        <div class="process">
+            <h2 id="overview">Uniqueness</h2>
+            <div id="problem">
+                <h3>Brain Activity Wearable with Everyday Life Design</h3>
+
+                <p>The idea of affective computing/design is not new; however the sensors have not been designed in a way that can be worn in everyday life. The aesthetics of EEG cap has mostly stopped at the looks of a medical device level, compared to other wearable sensors such as heart rate monitor watches that are much more integrated into daily use. There are plenty of cool projects that use EEG sensors to gather insight on sleep patterns, emotions, memories and more, but the design of the sensor prevented it from being widely accepted by non-academic users.</p>
+            </div>
+        </div>
+
+        <div class="miro">
+            <div class="process">
+            <h2>Inspiration & Related Works</h2>
+            <img src="images/mindlight-inspiration.jpg" alt="Inspiration">
+            <h3>Affective Memory</h3>
+            <p>Camera + Biosensing watch + mobile EEG headset.<br>Software combines the videos and biometric signals, creating minutes-long films that slow down and speed up in accordance with biosignals that correspond with the noteworthiness of events in life.</p>
+            <h3>Thinking Cap</h3>
+            <p>A wearable “Sorting Hat” from Harry Potter equipped with EEG and bluetooth speaker. Measures the self esteem of children before and after the Hat’s praise on their effort and ability, and determines if there are changes in self-perception. Positively influence children’s motivation and academic achievements.</p>
+            <h3>Olfactory Interface</h3>
+            <p>A close-to-nose interface used as a complementary wearable to nasal cannulas or masks, used in medicine to deliver drugs to the body. The user can activate the piezoelectric scent release via a custom-made smartphone app that connects to the prototype.</p>
+            </div>
+
+            <div class="process"><h2>Design Evolution</h2>
+                <img src="images/mindlight-aesthetics.jpg" alt="Aesthetics Design">
+                <img src="images/mindlight-storyboard.jpg" alt="Storyboard">
+            </div>
+            
+            <div class="process"><h2>Hardware</h2><h3>OpenBCI</h3>
+                <p>OPENBCI is an open-source brain computer interface tool for neuroscience and biosensing. Part of their mission is to democratize access to neurotechnology, the OpenBCI team launched and supported a number of accessible, open-source products. Their efforts have led to the development of a strong community of users around the world who are pushing boundaries in a number of fields. The founder of OPENBCI is also a research affiliate at the MIT Media Lab, and have donated to a number of projects at the MIT Fluid Interfaces group.</p>
+                <img src="images/mindlight-openbci.jpg" alt="OpenBCI">
+            
+            </div>
+
+            <div class="process"><h2>Circuit Design</h2>
+                <p>The electrode locations are based on OpenBCI's recommendation on EEG electrode placements.</p>
+                <img src="images/mindlight-circuit.jpg" alt="Circuit">
+            </div>
+
+            <div class="process"><h2>Physical Design</h2>
+                <img src="images/mindlight-physical-design.jpg" alt="Physical Design">
+            </div>
+
+            <div class="process"><h2>Arduino Code</h2>
+                <img src="images/mindlight-code.jpg" alt="Arduino Code">
+            </div>
+
+            <div class="process"><h2>Final Aesthetics</h2>
+                <img src="images/mindlight-final.jpg" alt="Final Aesthetics">
+            </div>
+
+            <div class="process"><h2>Functional Aesthetics</h2>
+                <img src="images/mindlight-functionality.jpg" alt="Functional Aesthetics">
+            </div>
+
+            <div class="prototype">
+                <h2>Demo</h2>
+                <video controls playsinline autoplay loop>
+                    <source src="images/mindlight.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="process"><h2>Possible Improvements</h2>
+                <h3>Computational Power</h3>
+                <p>Due to the complexity of EEG brain activity data, my program and its computational power sometimes does not successfully reduce the noise in order to consistently and accurately analyze brain activity data in a scientifically accurate way, meaning removing confounds. For example, a lot of similar projects by professionals utilize machine learning to train the prototype to be more accurate. </p>
+                <h3>Budget Constraints</h3>
+                <p>I only purchased the OpenBCI board supporting 8 electrodes rather than 16, which decreases its noise reduction power and loses some accuracy of brain activity measurement. Moreover, wet electrodes require EEG conductive paste, which are not as convenient as the more expensive dry electrodes for casual wear.</p>
+                <h3>Physical Constraints</h3>
+                <p>Battery and boards are heavy and large, difficult to hide in a hat without being heavy and bulky. Not lightweight enough to be comfortably worn for a longer period of time.</p>
+            
+            </div>
+            
+            
+        </div>
+
+        <p>Check out the next project</p>
+
+        <!-- <article class="portfolio">
+            <div class="ux">
+                <h2>USER EXPERIENCE DESIGN</h2>
+
+                <div class="transition" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" data-aos-delay="200">
+                    <section class="eco">
+                        <div class="image-container">
+                            <img src="images/eco-800w.jpg" alt="ECO">
+                        </div>
+                        <div class="text-container">
+                            <h3>ECO</a></h3>
+                            <p class="intro">UX Design, Business, Product Design</p>
+                            <p>A shopping app that recommends alternative sustainable products along with a community feature to share product feedback.</p>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+        </article> -->
+        
+    </main>
+
+
+    <footer>
+        <div class="contact">
+            <p>Contact</p>
+            <ul>
+                <li><a href="carolineqingyuyau@gmail.com">Email</a></li>
+                <li>Phone</li>
+                <li>Wechat</li>
+            </ul>
+        </div>
+
+        <div class="connect">
+            <p>Connect</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/carolineyau/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/caroline__yau/" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hire">
+            <p>Hire</p>
+            <ul>
+                <li><a href="https://www.dropbox.com/sh/ibwmw4w2v4zmh5r/AADfMxMNYfSDoDAjMBm2-1Cda?dl=0" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/carolineqyau" target="_blank">Github</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // var haoHan = document.getElementById("haohan-long");
+        // haoHan.scrollTop = haoHan.scrollHeight;
+
+        // function updateScroll(){
+        //     var haoHan = document.getElementById("haohan-long");
+        //     haoHan.scrollTop = haoHan.scrollHeight;
+        // }   
+
+    </script>
+</body>
+</html>
