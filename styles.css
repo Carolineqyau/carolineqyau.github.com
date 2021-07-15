@@ -153,13 +153,14 @@ nav ul li a:hover::before {
     padding-right: 50px;
     margin-top: 0;
     margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
     /* font-family: 'Lalezar', cursive; */
-    font-family: 'Paytone One', sans-serif;
+    /* font-family: 'Paytone One', sans-serif; */
     /* font-family: 'Inter', sans-serif; */
     font-size: 100px;
     line-height: 1.3em;
     /* color: #202023; */
-    color: white;
+    color: #657386;
     /* background-image: url(images/emotions-zine-1280w.png); */
 }
 

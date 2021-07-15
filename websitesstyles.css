@@ -263,27 +263,36 @@ main h2 {
     font-size: 50px;
     padding-bottom: 20px;
     margin-top: 100px;
-    color: #264575;
+    color: #5f7594;
 }
 
 main h2 a {
-    color: #7f9dc0;
+    /* color: #7f9dc0; */
+    color: #657386;
+
     text-decoration: none;
     transition: all 0.5s ease;
 }
 
 main h2 a:hover {
-    color: #4675aa;
+    color: #33455f;
     text-decoration: underline;
     /* transition: all 0.5s ease; */
 }
 
+h3 a {
+    color: #657386;
+    transition: all 0.5s ease;
+
+}
+h3 a:hover {
+    color: #33455f;
+}
 
 main h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 25px;
     padding-top: 30px;
-    /* color: #33A361; */
 }
 
 main h4 {
