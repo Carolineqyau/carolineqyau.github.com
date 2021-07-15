@@ -263,7 +263,7 @@ main h2 {
     font-size: 50px;
     padding-bottom: 20px;
     margin-top: 100px;
-    color: #1335cc;
+    color: #f06565;
 }
 
 main h2 a {
@@ -332,7 +332,7 @@ main img {
 
 .inline img {
     /* height: 600px; */
-    width: 700px;
+    width: 380px;
     vertical-align: top;
 
 }
