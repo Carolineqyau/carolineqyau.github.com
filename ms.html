@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="lstorestyles.css" rel="stylesheet">
+    <!-- <meta property="og:image" content="images/eco-800w.jpg" />
+    <meta property="og:description" content="A shopping app that recommends alternative sustainable products along with a community feature to share product feedback." />
+    <meta property="og:url" content="https://carolineqyau.github.io/eco.html" />
+    <meta property="og:title" content="ECO" /> -->
+    <title>Microsoft</title>
+    <link rel="shortcut icon" type="image/svg" href="images/cylogo-black.svg"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/cylogo-black.svg" alt="CY Logo" width="70" height="70">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="https://www.dropbox.com/sh/ibwmw4w2v4zmh5r/AADfMxMNYfSDoDAjMBm2-1Cda?dl=0" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/carolineqyau" target="_blank" id="github">Github</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="topimage">
+        <img src="images/lstore-thumbnail-2560w.jpg" alt="L-Store Logic Flow">
+    </div>
+
+    <main>
+        <!-- <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <ul>
+                    <li><a href="#problem">Problem</a></li>
+                    <li><a href="#solution">Solution</a></li>
+                </ul>
+            </ul>
+        </nav> -->
+
+        <div class="process">
+            <h2 id="overview">Weather Search Experience</h2>
+            <p>Bing Weather Answer Mobile Design</p>
+            <p>Tools: Adobe Illustrator, Figma</p>
+            <div id="problem">
+                <h3>PROCESS</h3>
+                <p><i>Due to the time constraint of this project, I had to make decisions about what design features to trade-off in order to prioritize the most important components needed by users. I started off with trying to understand user needs and analyzing current weather answer solutions by competitors. Then I created lo-fi wireframes to map out the information architecture and design patterns. Finally, I created a hi-fi prototype with horizontal scrolling interactions.</i></p>
+                <h4>Problem Space</h4>
+                <h5>CURRENT SOLUTION</h5>
+                <p>As of August 9, 2021, cn.bing.com currently does not have a weather answer in response to “location + weather” searches.<p>
+
+                <h4>User Research</h4>
+                <h5>RESEARCH GOALS</h5>
+                <ul>
+                    <li>Learn about our potential users’ needs</li>
+                    <li>Understand current solutions by competitors</li>
+                </ul>
+                <h5>ASKING THE RIGHT QUESTIONS</h5>
+                <ul>
+                    <li>Why do you search for the weather?</li>
+                    <li>What information do you primarily look for when searching about weather?</li>
+                    <li>What features/information would you remove on the weather answers?</li>
+                    <li>Is there a feature that you hoped weather answers/apps would have?</li>
+                </ul>
+                <h5>KEY QUALITATIVE USER RESPONSE INSIGHT</h5>
+                <p><i>To make better design decisions, I will highlight some common patterns I noticed from the user responses I conducted:</i></p>
+                <ul>
+                    <li>Users’ major goal is to check out the temperature</li>
+                    <li>Secondly, they want to know the weather, if it is sunny or not, and if it rains how heavy the rain is</li>
+                    <li>The incentive behind searching about weather on search engines is to:</li>
+                    <li>a.	Going out now and want to know the current temperature</li>
+                </ul>
+            
+            </div>
+        
+        </div>
+
+    
+
+        <div class="miro">
+
+            <img src="images/lstore-team.jpg" alt="Our Team">
+            <div class="process">
+                <p>As the team coordinator, I divided programming responsibilities and fostered collaboration, illustrated high-level architecture, generated detailed program logic flows using Figma and Adobe Premiere for better demonstration, oversaw project progress and helped implement functions.</p>
+            </div>
+
+            
+            <div class="process"><h2>Bufferpool Setup</h2>
+                <img src="images/lstore-bufferpool-2048w.jpg" alt="Bufferpool Overview">
+                <p>We efficiently implemented the bufferpool with Ordered Dictionary, which tracks the insertion order and is fast at lookup operations. It takes O(1) for lookups by index, and O(1) for lookups by key. Moreover, OrderedDict has O(1) for getitem, setitem, and delitem just like regular dictionaries, which makes it scale very well.</p>
+                <p>Bufferpool has a capacity of frames, which is the wrapper for a page.
+                The class frame has the following attributes:<br>
+                “pin count” keeps track of transaction number, and the boolean “is dirty” represents if a page has been modified.<br>
+                The class bufferpool has the following attributes:<br>
+                “path” is the page path to memory (or disk), “frame cache” is just itself the bufferpool, “number of current pages” is compared with “capacity” to check if the bufferpool reached maximum capacity.</p>
+                    
+                <p>When we add a page to bufferpool, we put it inside a frame and place it at very top of the ordered dictionary. The most recently accessed page is at the top, and the least recently accessed page is at the bottom of the bufferpool. Page accessed the longest time ago is at the back of the dictionary (like a queue).</p>
+                <h3>Animated Bufferpool Execution</h3>
+                <div class="prototype">
+                    <video controls playsinline autoplay muted loop>
+                        <source src="images/lstore-bufferpool.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+            <div class="process"><h2>Functions Logic Flow</h2><h3>Table.add and Pinning</h3><p>
+                The table.add function inserts a new record.
+                First, we find the page location of the record with RID (using page directory we find page number), then we use page number as key to see if page is in bufferpool.</p>
+                <p>If in buffer pool, grab page from buffer pool so that we can write to it. If not, we have to look in memory (which is the disk since were persisting all on disk).</p>
+                <p>If this page exists on memory, we pull from memory, and now we have the page to write to it. If page does not exist in memory, we create a new page and write to it.</p>
+                <p>Any time we write to a page, we first pin the page and increase pin count, write to it, done writing we unpin the page,
+                </p>
+                <img src="images/lstore-table-add-evict.jpg" alt="Table.add and Pinning">
+            
+            </div>
+
+            <div class="process"><h3>Evict Page</h3>
+                <p>After we're done writing to a page, we set dirty bit to true since it is modified. This process repeats itself. If we’ve reached maximum capacity in buffer pool and want to add one more, we would have to evict a page.</p>
+                <p>The eviction process goes as follows: check if it’s dirty. If yes, write that page back into memory; if not, get rid of it (since all we did was read, not modify).</p>
+                <img src="images/lstore-bufferpool-evict.jpg" alt="Evict">
+            </div>
+
+            <div class="process">
+                <h3>Implementing Durability: Storing Records to Disk</h3>
+            </div>
+
+            <div class="prototype">
+                <video controls playsinline autoplay muted loop>
+                    <source src="images/lstore-database1.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="process">
+                <h3>Page Allocation and Writing</h3>
+            </div>
+
+            <div class="prototype">
+                <video controls playsinline autoplay muted loop>
+                    <source src="images/lstore-database2.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="process">
+                <h3>Merge</h3>
+                <p>When certain number of updates has been done, we perform merge on the background thread so that writing and reading pages can occur concurrently.</p>
+            </div>
+            <div class="inline">
+                <img src="images/lstore-merge1.jpg" alt="Merge 1">
+                <img src="images/lstore-merge2.jpg" alt="Merge 2">
+            </div>
+
+            <div class="process">
+                <h2>QueCC</h2>
+                <p>QueCC is a Queue-oriented Control-free Concurrency Architecture. We incorporated QueCC with the goal of abandoning complex concurrency.</p>
+            </div>
+
+            <div class="prototype">
+                <h3>Aggregating Transaction List</h3>
+                <video controls playsinline autoplay muted loop>
+                    <source src="images/lstore-transaction-0.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="process">
+                <h3>Planning Stage</h3>
+                    <p>In this stage, we split the transaction list evenly depending on how many planning threads we have. Once we pass those transactions into the planning thread, each transaction is made up of queries. We take a look at each query which each works on a certain record, take the RID as the key and modulo it by the number of queues in planning thread. This places all the operations for a certain record into the same queue, and place all operations of 0th oeperaction to 0th queue. Finally, planning threads take transactions and separate queries into queues.</p>
+                    <div class="prototype">
+                        <video controls playsinline autoplay muted loop>
+                            <source src="images/lstore-transaction.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                        </video>
+                    </div>
+                <h2>L-Store Multithreading Execution</h2>
+                <div class="prototype">
+                <video controls playsinline autoplay muted loop>
+                    <source src="images/lstore-multithreading.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+            </div>
+
+            
+
+            <div class="process"><h3>Concurrent Batch Planning</h3></div>
+
+            <div class="prototype">
+                <video controls playsinline autoplay muted loop>
+                    <source src="images/lstore-batchqueue.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            
+        </div>
+
+        <h2><a href="mindlight.html">Check out the next project</a></h2>
+
+        <!-- <article class="portfolio">
+            <div class="ux">
+                <h2>USER EXPERIENCE DESIGN</h2>
+
+                <div class="transition" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" data-aos-delay="200">
+                    <section class="eco">
+                        <div class="image-container">
+                            <img src="images/eco-800w.jpg" alt="ECO">
+                        </div>
+                        <div class="text-container">
+                            <h3>ECO</a></h3>
+                            <p class="intro">UX Design, Business, Product Design</p>
+                            <p>A shopping app that recommends alternative sustainable products along with a community feature to share product feedback.</p>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+        </article> -->
+        
+    </main>
+
+
+    <footer>
+        <div class="contact">
+            <p>Contact</p>
+            <ul>
+                <li><a href="carolineqingyuyau@gmail.com">Email</a></li>
+                <li>Phone</li>
+                <li>Wechat</li>
+            </ul>
+        </div>
+
+        <div class="connect">
+            <p>Connect</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/carolineyau/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/caroline__yau/" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hire">
+            <p>Hire</p>
+            <ul>
+                <li><a href="https://www.dropbox.com/sh/ibwmw4w2v4zmh5r/AADfMxMNYfSDoDAjMBm2-1Cda?dl=0" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/carolineqyau" target="_blank">Github</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // var haoHan = document.getElementById("haohan-long");
+        // haoHan.scrollTop = haoHan.scrollHeight;
+
+        // function updateScroll(){
+        //     var haoHan = document.getElementById("haohan-long");
+        //     haoHan.scrollTop = haoHan.scrollHeight;
+        // }   
+
+    </script>
+</body>
+</html>
