@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" />
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blockbuster Video!</title>
 </head>
 <body>
-    <video id="myVideo" poster="images/eren-yeager.jpg" controls muted autoplay loop playsinline>
-        <source src="media/eren-yeager.webm" type="video/webm">
-        <source src="media/eren-yeager.mp4" type="video/mp4">
-        <p>Your browser doesn't support HTML5 video.
-            Here is a <a href="media/eren-yeager.mp4">link to the video</a> instead.
-        </p>
+
+        <div class="wrapper">
+            <video class="video blurEffect" id="myVideo" poster="images/eren-yeager.jpg" loop playsinline> 
+                <source src="media/eren-yeager.webm" type="video/webm">
+                <source src="media/eren-yeager.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video.
+                    Here is a <a href="media/eren-yeager.mp4">link to the video</a> instead.</p>
+            </video>
+            <div class="button">
+                <div class="play">►</div>
+            </div>
+        </div>
+        <i class="fas fa-expand"></i>
+    
+        <section id="poem">
+            <p id="line1" class="hidden">世界は残酷だ</p>
+            <p id="line2" class="hidden">それでも君を愛すよ</p>
+        </section>
+
 </body>
 </html>
