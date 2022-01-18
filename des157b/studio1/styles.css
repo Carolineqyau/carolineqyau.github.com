@@ -60,6 +60,19 @@ body {
     opacity: 1;
 }
 
+@keyframes bird {
+    0% {
+        opacity: .5;
+        /* transform: scale(1); */
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+        /* transform: scale(1.5); */
+    }
+}
 /* cut line */
 .wrapper {
     position: relative;
@@ -98,6 +111,7 @@ body {
     padding: 10px 25px;
     margin-bottom: 16px;
     transition: all .2s;
+    animation: bird 2s infinite alternate ease-in-out;
 
 }
 
