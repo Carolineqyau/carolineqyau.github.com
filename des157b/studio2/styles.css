@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(107.54deg, rgba(198, 202, 237, 0.2) 0%, rgba(255, 227, 218, 0) 100%), rgba(255, 244, 236, 0.5);
+    font-family: 'EB Garamond', serif;
+}
+
+h1 {
+    position: absolute;
+    width: 903px;
+    height: 104px;
+    left: 77px;
+    top: 30px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 78px;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90.14deg, #BA7ECF 2.9%, #F19ED0 23.1%, #948DF2 44.99%, #B9C2FF 75.22%, #FBCEA5 101.86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+#button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 930px;
+    top: 60px;
+    
+}
+
+#text {
+    position: absolute;
+    margin-left: 77px;
+    margin-right: 77px;
+    top: 172px;
+    color: #51599E;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 90px;
+
+}
+
+.hidden {
+    opacity: 0;
+}
