@@ -1,82 +1,82 @@
 {
-    "Thursday-1" : {
-        "notifications" : 45,
-        "pickups" : 19,
-        "duration" : "2 hours",
-        "success" : 0,
-        "due" : 1,
-        "holiday" : 0
-    },
-    "Wednesday-1" : {
-        "notifications" : 34,
-        "pickups" : 24,
-        "duration" : "3 hours",
-        "success" : 1,
-        "due" : 1,
-        "holiday" : 0
-    },
-    "Tuesday" : {
-        "notifications" : 32,
-        "pickups" : 5,
-        "duration" : "1 hour",
-        "success" : 1,
-        "due" : 1,
-        "holiday" : 0
-    },
-    "Monday" : {
-        "notifications" : 7,
-        "pickups" : 9,
-        "duration" : "2 hours",
-        "success" : 1,
-        "due" : 1,
-        "holiday" : 1
-    },
-    "Sunday" : {
-        "notifications" : 2,
-        "pickups" : 7,
-        "duration" : "1 hour",
-        "success" : 1,
-        "due" : 0,
-        "holiday" : 1
-    },
-    "Saturday" : {
-        "notifications" : 57,
-        "pickups" : 41,
-        "duration" : "1 hour",
-        "success" : 1,
-        "due" : 1,
-        "holiday" : 1
-    },
-    "Friday" : {
-        "notifications" : 61,
-        "pickups" : 55,
-        "duration" : "4 hours",
-        "success" : 1,
-        "due" : 1,
-        "holiday" : 0
-    },
-    "Thursday" : {
-        "notifications" : 19,
-        "pickups" : 0,
-        "duration" : "N/A",
-        "success" : 1,
-        "due" : 1,
-        "holiday" : 0
-    },
-    "Wednesday" : {
-        "notifications" : 28,
-        "pickups" : 21,
-        "duration" : "3 hours",
-        "success" : 1,
-        "due" : 1,
-        "holiday" : 0
-    },
-    "Wednesday" : {
-        "notifications" : 28,
-        "pickups" : 21,
-        "duration" : "3 hours",
-        "success" : 1,
-        "due" : 1,
-        "holiday" : 0
-    },
+	"Jan 20": {
+		"notifications": 45,
+		"pickups": 19,
+		"duration": 2,
+		"success": 0,
+		"wakeup": 8,
+		"holiday": 0
+	},
+	"Jan 19": {
+		"notifications": 34,
+		"pickups": 24,
+		"duration": 3,
+		"success": 1,
+		"wakeup": 10,
+		"holiday": 0
+	},
+	"Jan 18": {
+		"notifications": 32,
+		"pickups": 5,
+		"duration": 1,
+		"success": 1,
+		"wakeup": 5,
+		"holiday": 0
+	},
+	"Jan 17": {
+		"notifications": 7,
+		"pickups": 9,
+		"duration": 2,
+		"success": 1,
+		"wakeup": 6,
+		"holiday": 1
+	},
+	"Jan 16": {
+		"notifications": 2,
+		"pickups": 7,
+		"duration": 1,
+		"success": 1,
+		"wakeup": 14,
+		"holiday": 1
+	},
+	"Jan 15": {
+		"notifications": 57,
+		"pickups": 41,
+		"duration": 1,
+		"success": 1,
+		"wakeup": 12,
+		"holiday": 1
+	},
+	"Jan 14": {
+		"notifications": 61,
+		"pickups": 55,
+		"duration": 4,
+		"success": 1,
+		"wakeup": 9,
+		"holiday": 0
+	},
+	"Jan 13": {
+		"notifications": 19,
+		"pickups": 0,
+		"duration": 0,
+		"success": 1,
+		"wakeup": 7,
+		"holiday": 0
+	},
+	"Jan 12": {
+		"notifications": 28,
+		"pickups": 21,
+		"duration": 3,
+		"success": 1,
+		"wakeup": 10,
+		"holiday": 0
+	},
+	"Jan 11": {
+		"notifications": 28,
+		"pickups": 21,
+		"duration": 3,
+		"success": 1,
+		"wakeup": 8,
+		"holiday": 0
+	}
 }

@@ -13,10 +13,15 @@
 </head>
 <body>
     <h1>What does it take to wake me up?</h1>
-    <div id="button">
+    <div id="button" class="showing arrow">
         <img src="images/arrow.png" alt="button" width="100" height="100">
-        <img class="hidden" src="images/portrait.png" alt="button" width="100" height="100">
     </div>
-    <p id="text" class="hidden">On the days that I have classes or something due, it on average takes <b>32</b> alarms and <b>19</b> snoozes over <b>2</b> hours for me to wake up. The success rate is <b>80%</b>.<br><br>Over the weekend, I usually wake up at <b>12:00</b> compared to <b>6:00</b> during workdays.</p>
+    <!-- <div id="profile" class="hidden">
+        <img id="profile" class="hidden" src="images/portrait.png" alt="button" width="100" height="100">
+    </div> -->
+
+    <p id="text" class="hidden">
+        On the days that I have classes or something due, on average it takes <b><span id="notifications">0</span></b> alarms and <b><span id="pickups">0</span></b> snoozes over <b><span id="duration">0</span></b> hours for me to wake up. The success rate is <b><span id="success">0</span>%</b>.<br><br>Over the weekend, I usually wake up at <b><span id="weekend">0</span>:00</b> compared to <b><span id="workday">0</span>:00</b> during workdays.
+    </p>
 </body>
 </html>
