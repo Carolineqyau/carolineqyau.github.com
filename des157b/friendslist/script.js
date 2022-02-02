@@ -1,8 +1,8 @@
-(function(){
-    'use strict';
+Parse.initialize("NL2vykaRSXy1afjuS6vLS0cJIeHSvMdA0G9dMnU5","ZMtt9v6QPiL8ZZL7rtIn1RjnvGIMI7UIwtCqoC32"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+Parse.serverURL = 'https://parseapi.back4app.com/';
 
-    Parse.initialize("NL2vykaRSXy1afjuS6vLS0cJIeHSvMdA0G9dMnU5","ZMtt9v6QPiL8ZZL7rtIn1RjnvGIMI7UIwtCqoC32"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-    Parse.serverURL = 'https://parseapi.back4app.com/';
+
+    // 'use strict';
 
     const newBtn = document.getElementById ("newbtn");
     const editBtns = document. querySelectorAll(".fa-edit");
@@ -16,7 +16,7 @@
 
         try {
             const results = await query.ascending('lname').find();
-            //console.log(results);
+            console.log(results);
 
             results.forEach( function( eachFriend) {
                 const id = eachFriend.id;
@@ -76,4 +76,3 @@
     });
 
 
-})();
