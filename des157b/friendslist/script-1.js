@@ -1,5 +1,7 @@
-// Parse.initialize("6mvvxIkhEb95uEFFP7puyUFOfGqo9QKkJUoO34Fo","3r7YdXM8kcrm0d69JXWczXZ4YHjuowqxl58IkA84");
-Parse.initialize("NL2vykaRSXy1afjuS6vLS0cJIeHSvMdA0G9dMnU5","ZMtt9v6QPiL8ZZL7rtIn1RjnvGIMI7UIwtCqoC32"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+Parse.initialize("6mvvxIkhEb95uEFFP7puyUFOfGqo9QKkJUoO34Fo","3r7YdXM8kcrm0d69JXWczXZ4YHjuowqxl58IkA84");
+// Parse.initialize("foFGyxMIpN64OIdP8Q1Sf5mPEAKgbSwM9W2hx74u","ASyS75bh2ueO9CSOSLVTHcYvzEDXfgKL7sOnIGoZ");
+
+// Parse.initialize("NL2vykaRSXy1afjuS6vLS0cJIeHSvMdA0G9dMnU5","ZMtt9v6QPiL8ZZL7rtIn1RjnvGIMI7UIwtCqoC32"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
 Parse.serverURL = 'https://parseapi.back4app.com/'
 
 const newBtn = document.getElementById("newbtn");
