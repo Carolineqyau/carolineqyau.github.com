@@ -29,6 +29,8 @@ h2 b {
 
 .flex {
     display: flex;
+    justify-content: space-between;
+    width: 40%;
 }
 
 .line-divider {
