@@ -1,3 +1,9 @@
+header h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 img {
     width: 700px;
     display: block;
@@ -11,20 +17,24 @@ body {
     /* background-color: black; */
     background: linear-gradient(180deg, #212121 0%, #3F5172 100%);
     margin: 60px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media only screen and (max-width: 800px) {
     /* desktop first approach uses max-width, indicating that the following conditions 
     are applied if screen is between 0 and 900px (horizontal scroll bar) */
     
+    header h1 {
+        margin-top: 60px;
+    }
     img {
         width: 90vw;
         margin-bottom: 20px;
         border-radius: 16px;
     }
     body {
-        margin: auto;
         margin: 16px;
+        margin-bottom: 40px;
     }
     
 }
