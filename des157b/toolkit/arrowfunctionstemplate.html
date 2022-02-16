@@ -32,30 +32,36 @@
     <h2>Named Function</h2>
     <code>
         <pre>
-            function(parameter){
-                Do something();
+            function makeUpperCase(aString) {
+                return aString.toUpperCase();
             }
+    
+            console.log(makeUpperCase('some string'));
         </pre>
     </code>
 
     <h2>Function Expression</h2>
     <code>
         <pre>
-            const aVaraiable = function(parameter){
-                Do something();
+            const makeUpperCase = function(aString) {
+                return aString.toUpperCase();
             }
+    
+            console.log(makeUpperCase("here is a string."));
         </pre>
     </code>
 
     <h2>Arrow Function</h2>
     <code>
         <pre>
-            const aVaraiable = arrow function...{
+            const makeUpperCase = (aString) => {
+                return aString.toUpperCase();
             }
+            console.log(makeUpperCase("here is a string"));
         </pre>
     </code>
 
-    <footer> Your Name </footer>
+    <footer> Caroline Yau </footer>
     
     <script>
         // function makeUpperCase(aString) {
