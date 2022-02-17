@@ -15,7 +15,7 @@ img {
 body {
     /* background-color: black; */
     /* background: linear-gradient(180deg, #212121 0%, #666666 100%); */
-    background: linear-gradient(180deg, #F0FBFF 0%, #F0F1FF 50%, #E7EDFF 100%);    margin: 60px;
+    background: linear-gradient(180deg, #f0f6ff 0%, #f7eeff 100%);    margin: 60px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -40,7 +40,7 @@ p {
 }
 
 p em {
-    color: royalblue;
+    color: mediumpurple;
 }
 body p a {
     text-decoration: none;
