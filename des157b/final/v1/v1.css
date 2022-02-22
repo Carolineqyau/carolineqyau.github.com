@@ -1,0 +1,55 @@
+/* font-family: 'Caveat Brush', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #212121;
+    color: white;
+    transition: all ease-in-out .2s;
+}
+
+h1, h2, h3, #thought {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+#thought {
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+    font-weight: 600;
+}
+
+#thought h2 {
+    font-size: 80px;
+}
+#thought p {
+    font-size: 48px;
+}
+
+nav ul {
+    padding-left: 0;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: lightblue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+
+    transition: all ease-in-out 2s;
+}
