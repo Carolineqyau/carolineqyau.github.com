@@ -13,12 +13,7 @@ body {
     transition: all ease-in-out .2s;
 }
 
-h1, h2, h3, #thought {
-    font-family: 'Playfair Display', serif;
-    font-weight: 800;
-}
-
-#thought {
+section {
     text-align: center;
     width: 80vw;
     margin: auto;
@@ -26,10 +21,34 @@ h1, h2, h3, #thought {
     font-weight: 600;
 }
 
-#thought h2 {
+.horizontalscroll {
+    display: flex;
+}
+
+.horizontalscroll section {
+    min-width: 100vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.rightchevron {
+    position: absolute;
+    right: 12px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h1, h2, h3, #thought {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+#thought h2, #definition h2 {
     font-size: 80px;
 }
-#thought p {
+#thought p, #definition p {
     font-size: 48px;
 }
 
@@ -52,4 +71,23 @@ nav ul li a:hover {
     text-decoration: underline;
 
     transition: all ease-in-out 2s;
+}
+
+@font-face {
+    font-family: "Chalk Stick";
+    src: url(fonts/ChalkStick-WjAv.ttf) format("truetype");
+}
+@font-face {
+    font-family: "CF Blackboard";
+    src: url(fonts/CfBlackboardPersonalRegular-AKPg.ttf);
+}
+p.chalkstick { 
+    font-family: "Chalk Stick", serif;
+    font-size: 100px;
+    letter-spacing: 4px;
+}
+
+p.blackboard {
+    font-family: "CF Blackboard", FallBack, "Segoe UI";
+    font-size: 40px;
 }
