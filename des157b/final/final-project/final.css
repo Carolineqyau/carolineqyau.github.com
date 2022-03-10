@@ -1,0 +1,205 @@
+/* font-family: 'Caveat Brush', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #212121; */
+    background: linear-gradient(180deg, #212121, #333333);
+    color: white;
+    transition: all ease-in-out .2s;
+}
+
+#intro {
+    margin-top: 200px;
+}
+
+nav {
+
+    margin: auto;
+}
+nav ul {
+    display: flex;
+    font-size: 12px;
+}
+
+nav ul li {
+    padding-left: 60px;
+}
+
+section {
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    min-height: 100vh;
+    font-weight: 600;
+}
+
+button {
+    width: 400px;
+    height: 120px;
+    border-radius: 100px;
+    background-color: #DDDDDD;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: rgba(102, 102, 102, 0.5);
+}
+
+#ff-compose {
+    font-family: 'Open Sans';
+    font-style: normal;
+    width: 1000px;
+    margin: auto;
+}
+
+#ff-compose label {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+#ff-compose button {
+    width: 400px;
+    height: 100px;
+}
+
+/* .ff-description {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+} */
+
+textarea {
+    width: 600px;
+    border-radius: 40px;
+    padding: 40px;
+    height: 320px;
+    font-size: 32px;
+}
+
+input[type=text] {
+    width: 400px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+img {
+    max-height: 800vh;
+    max-width: 1000px;
+}
+
+.rightchevron {
+    position: absolute;
+    right: 12px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h1, h2, h3, #thought {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+.verticalscroll h2 {
+    font-size: 60px;
+}
+.verticalscroll p {
+    font-size: 28px;
+    line-height: 44px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.horizontal {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.horizontal button {
+    margin-right: 20px;
+}
+
+.horizontal img {
+    max-height: 420px;
+}
+#eileengu p, #mystory p {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+}
+
+.questions h2 {
+    font-size: 40px;
+    line-height: 72px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.responses {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;   
+    text-align: left;
+
+}
+
+nav ul {
+    padding-left: 0;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FEF900;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+
+    transition: all ease-in-out 2s;
+}
+
+@font-face {
+    font-family: "Chalk Stick";
+    src: url(fonts/ChalkStick-WjAv.ttf) format("truetype");
+}
+@font-face {
+    font-family: "CF Blackboard";
+    src: url(fonts/CfBlackboardPersonalRegular-AKPg.ttf);
+}
+p.chalkstick { 
+    font-family: "Chalk Stick", serif;
+    font-size: 100px;
+    letter-spacing: 4px;
+}
+
+p.blackboard {
+    font-family: "CF Blackboard", FallBack, "Segoe UI";
+    font-size: 40px;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
