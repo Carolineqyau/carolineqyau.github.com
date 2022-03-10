@@ -14,12 +14,38 @@ body {
     transition: all ease-in-out .2s;
 }
 
-#intro {
-    margin-top: 200px;
+#one {
+    /* background-color: blue; */
+}
+
+#two {
+    background-color: rgb(16, 16, 218);
+}
+
+#three {
+    background-color: rgb(127, 0, 231);
+}
+
+#four {
+    background: linear-gradient(0deg, #0F1328 0%, #5f668f 100%);
+}
+
+#five {
+    background: linear-gradient(180deg, #CC0006 0%, #006DFF 100%);
+}
+
+#six {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(180deg, #121281 0%, #333333 100%);
+}
+
+em {
+    color: #FEF900;
 }
 
 nav {
-
+    transition: all 2s;
     margin: auto;
 }
 nav ul {
@@ -32,10 +58,11 @@ nav ul li {
 }
 
 section {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     width: 1000px;
     margin: auto;
-    min-height: 100vh;
     font-weight: 600;
 }
 
@@ -43,12 +70,18 @@ button {
     width: 400px;
     height: 120px;
     border-radius: 100px;
-    background-color: #DDDDDD;
+    background-color: #b3a6ff;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    color: rgba(102, 102, 102, 0.5);
+    color: rgb(0, 0, 26);
+    transition: all ease-in-out .2s;
+}
+
+button:hover {
+    background-color: #fff01b;
+    font-weight: 600;
 }
 
 #ff-compose {
@@ -69,18 +102,22 @@ button {
     height: 100px;
 }
 
-/* .ff-description {
+.ff-description {
     visibility: hidden;
     opacity: 0;
     height: 0;
-} */
+}
+
+#ff-compose img, #ff-compose button img {
+    display: none;
+}
 
 textarea {
     width: 600px;
-    border-radius: 40px;
-    padding: 40px;
-    height: 320px;
-    font-size: 32px;
+    border-radius: 24px;
+    padding: 20px;
+    height: 120px;
+    font-size: 24px;
 }
 
 input[type=text] {
@@ -93,6 +130,7 @@ img {
     max-height: 800vh;
     max-width: 1000px;
 }
+
 
 .rightchevron {
     position: absolute;
@@ -130,12 +168,16 @@ h1, h2, h3, #thought {
 }
 
 .horizontal img {
-    max-height: 420px;
+    max-height: 460px;
 }
 #eileengu p, #mystory p {
     font-size: 20px;
     line-height: 32px;
     text-align: left;
+}
+
+.questions {
+    margin-bottom: 200px;
 }
 
 .questions h2 {
@@ -150,7 +192,15 @@ h1, h2, h3, #thought {
     font-size: 16px;
     line-height: 24px;   
     text-align: left;
+    display: flex;
+}
 
+.cards {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    margin-right: 16px;
+    color: #212121;
+    padding: 16px;
 }
 
 nav ul {
@@ -170,7 +220,6 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-
     transition: all ease-in-out 2s;
 }
 
@@ -202,4 +251,5 @@ p.blackboard {
     visibility: hidden;
     opacity: 0;
     height: 0;
+    width: 0;
 }
