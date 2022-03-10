@@ -221,6 +221,7 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
     transition: all ease-in-out 2s;
+    color: #b3a6ff;
 }
 
 @font-face {
